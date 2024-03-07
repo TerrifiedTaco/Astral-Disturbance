@@ -870,7 +870,8 @@ public class SkyboxDrawTestProcProcedure {
 				RenderSystem.setShaderTexture(0, _texturelocation);
 				Minecraft.getInstance().getTextureManager().bindForSetup(_texturelocation);
 			}
-			renderTexture(50, 0, -60, 0, (int) (255 << 24 | 255 << 16 | 255 << 8 | 255), true);
+			renderTexture(50, (float) AstralDisturbanceModVariables.e_doing_donuts, -30, 0, (int) (255 << 24 | 255 << 16 | 255 << 8 | 255), true);
+			AstralDisturbanceModVariables.e_doing_donuts = (AstralDisturbanceModVariables.e_doing_donuts + 1) % 360;
 		}
 	}
 }

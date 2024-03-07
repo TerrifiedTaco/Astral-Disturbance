@@ -22,6 +22,8 @@ import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class AstralDisturbanceModVariables {
+	public static double e_doing_donuts = 0;
+
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		AstralDisturbanceMod.addNetworkMessage(SavedDataSyncMessage.class, SavedDataSyncMessage::buffer, SavedDataSyncMessage::new, SavedDataSyncMessage::handler);
