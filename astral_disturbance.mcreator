@@ -38,6 +38,7 @@
     {
       "name": "SkyboxDrawTest",
       "type": "command",
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "skybox_draw_test",
@@ -81,7 +82,12 @@
         "files": [
           "src/main/java/net/essorant/astraldisturbance/procedures/SkyboxDrawTestProcProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     }
   ],
