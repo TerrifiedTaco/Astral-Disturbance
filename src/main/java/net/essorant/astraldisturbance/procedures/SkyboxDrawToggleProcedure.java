@@ -1,12 +1,8 @@
 package net.essorant.astraldisturbance.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.commands.CommandSourceStack;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.essorant.astraldisturbance.network.AstralDisturbanceModVariables;
-
-import com.mojang.brigadier.context.CommandContext;
-import com.mojang.brigadier.arguments.BoolArgumentType;
+import javax.annotation.Nullable;
 
 public class SkyboxDrawToggleProcedure {
 	public static void execute(LevelAccessor world, CommandContext<CommandSourceStack> arguments) {

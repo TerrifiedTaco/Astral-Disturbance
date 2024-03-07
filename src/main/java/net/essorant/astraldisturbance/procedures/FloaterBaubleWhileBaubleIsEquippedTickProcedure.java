@@ -1,6 +1,8 @@
 package net.essorant.astraldisturbance.procedures;
 
-import net.minecraft.world.entity.Entity;
+import net.minecraftforge.eventbus.api.Event;
+
+import javax.annotation.Nullable;
 
 public class FloaterBaubleWhileBaubleIsEquippedTickProcedure {
 	public static void execute(Entity entity) {
@@ -8,6 +10,7 @@ public class FloaterBaubleWhileBaubleIsEquippedTickProcedure {
 			return;
 		if (entity.isShiftKeyDown()) {
 			entity.setNoGravity(true);
+			entity.fallDistance = 0;
 		} else {
 			entity.setNoGravity(false);
 		}

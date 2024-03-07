@@ -4,7 +4,7 @@
       "name": "FloaterBauble",
       "type": "curiosbauble",
       "sortid": 2,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "floater_bauble",
       "metadata": {
@@ -19,7 +19,7 @@
       "name": "FloaterBaubleWhileBaubleIsEquippedTick",
       "type": "procedure",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "floater_bauble_while_bauble_is_equipped_tick",
       "metadata": {
