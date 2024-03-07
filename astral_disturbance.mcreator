@@ -1,13 +1,56 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "FloaterBauble",
+      "type": "curiosbauble",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "floater_bauble",
+      "metadata": {
+        "files": [
+          "src/main/java/net/essorant/astraldisturbance/item/FloaterBaubleItem.java",
+          "src/main/resources/assets/astral_disturbance/models/item/floater_bauble.json"
+        ]
+      },
+      "path": "~/Baubles"
+    },
+    {
+      "name": "FloaterBaubleWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "floater_bauble_while_bauble_is_equipped_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/essorant/astraldisturbance/procedures/FloaterBaubleWhileBaubleIsEquippedTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Baubles"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.astral_disturbance.floater_bauble": "Floater Bauble"
+    }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Baubles",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "astral_disturbance",
