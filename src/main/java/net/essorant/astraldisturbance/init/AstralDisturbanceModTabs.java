@@ -22,7 +22,7 @@ public class AstralDisturbanceModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 
-		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(AstralDisturbanceModItems.FLOATER_BAUBLE.get());
 		}
 	}

@@ -17,7 +17,7 @@ import java.util.List;
 
 public class FloaterBaubleItem extends Item implements ICurioItem {
 	public FloaterBaubleItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
 	}
 
 	@Override

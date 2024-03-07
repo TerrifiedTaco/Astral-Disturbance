@@ -1,8 +1,38 @@
 package net.essorant.astraldisturbance.procedures;
 
+import org.checkerframework.checker.units.qual.h;
+
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.client.event.RenderLevelStageEvent;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.ShaderInstance;
+import net.minecraft.client.renderer.GameRenderer;
+import net.minecraft.client.renderer.FogRenderer;
+import net.minecraft.client.multiplayer.ClientLevel;
+import net.minecraft.client.Minecraft;
+
+import net.essorant.astraldisturbance.network.AstralDisturbanceModVariables;
 
 import javax.annotation.Nullable;
+
+import com.mojang.blaze3d.vertex.VertexFormatElement;
+import com.mojang.blaze3d.vertex.VertexFormat;
+import com.mojang.blaze3d.vertex.VertexBuffer;
+import com.mojang.blaze3d.vertex.Tesselator;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.DefaultVertexFormat;
+import com.mojang.blaze3d.vertex.BufferBuilder;
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.platform.GlStateManager;
 
 @Mod.EventBusSubscriber(value = {Dist.CLIENT})
 public class SkyboxDrawTestProcProcedure {
@@ -831,15 +861,17 @@ public class SkyboxDrawTestProcProcedure {
 		execute(null, world);
 	}
 
-private static void execute(
-@Nullable Event event,
-LevelAccessor world
-) {
-if (AstralDisturbanceModVariables.WorldVariables.get(world).put_e_into_the_sky) {RenderSystem.enableBlend();
-RenderSystem.defaultBlendFunc();{
-ResourceLocation _texturelocation = new ResourceLocation(("astral_disturbance" + ":textures/" + "comically_large_e" + ".png"));
-RenderSystem.setShaderTexture(0, _texturelocation);
-Minecraft.getInstance().getTextureManager().bindForSetup(_texturelocation);
-}renderTexture(50, (float), -30, 0, (int)(255 << 24 | 255 << 16 | 255 << 8 | 255), true);}
-}
+	private static void execute(@Nullable Event event, LevelAccessor world) {
+		if (AstralDisturbanceModVariables.WorldVariables.get(world).put_e_into_the_sky) {
+			RenderSystem.enableBlend();
+			RenderSystem.defaultBlendFunc();
+			{
+				ResourceLocation _texturelocation = new ResourceLocation(("astral_disturbance" + ":textures/" + "comically_large_e" + ".png"));
+				RenderSystem.setShaderTexture(0, _texturelocation);
+				Minecraft.getInstance().getTextureManager().bindForSetup(_texturelocation);
+			}
+			renderTexture(50, (float) AstralDisturbanceModVariables.e_doing_donuts, -30, 0, (int) (255 << 24 | 255 << 16 | 255 << 8 | 255), true);
+			AstralDisturbanceModVariables.e_doing_donuts = (AstralDisturbanceModVariables.e_doing_donuts + 1) % 360;
+		}
+	}
 }
