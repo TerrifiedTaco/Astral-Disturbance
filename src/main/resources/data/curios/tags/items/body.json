@@ -1,0 +1,7 @@
+{
+  "replace": "false",
+  "values": [
+    "minecraft:air",
+    "astral_disturbance:floater_bauble"
+  ]
+}

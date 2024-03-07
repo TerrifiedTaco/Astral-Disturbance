@@ -29,6 +29,9 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.essorant.astraldisturbance.init.AstralDisturbanceModTabs;
+import net.essorant.astraldisturbance.init.AstralDisturbanceModItems;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -46,6 +49,10 @@ public class AstralDisturbanceMod {
 	public AstralDisturbanceMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		AstralDisturbanceModItems.REGISTRY.register(bus);
+
+		AstralDisturbanceModTabs.REGISTRY.register(bus);
 
 	}
 
