@@ -846,7 +846,7 @@ public class SkyboxDrawTestProcProcedure {
 			RenderSystem.enableBlend();
 			RenderSystem.defaultBlendFunc();
 			RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
-			execute(_provider, level);
+			execute(_provider, level, entity);
 			RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
 			RenderSystem.colorMask(true, true, true, true);
 			RenderSystem.enableCull();
@@ -857,11 +857,13 @@ public class SkyboxDrawTestProcProcedure {
 		}
 	}
 
-	public static void execute(LevelAccessor world) {
-		execute(null, world);
+	public static void execute(LevelAccessor world, Entity entity) {
+		execute(null, world, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
+		if (entity == null)
+			return;
 		if (AstralDisturbanceModVariables.WorldVariables.get(world).put_e_into_the_sky) {
 			RenderSystem.enableBlend();
 			RenderSystem.defaultBlendFunc();
@@ -870,8 +872,7 @@ public class SkyboxDrawTestProcProcedure {
 				RenderSystem.setShaderTexture(0, _texturelocation);
 				Minecraft.getInstance().getTextureManager().bindForSetup(_texturelocation);
 			}
-			renderTexture(50, (float) AstralDisturbanceModVariables.e_doing_donuts, -30, 0, (int) (255 << 24 | 255 << 16 | 255 << 8 | 255), true);
-			AstralDisturbanceModVariables.e_doing_donuts = (AstralDisturbanceModVariables.e_doing_donuts + 1) % 360;
+			renderTexture(50, (float) (entity.getYRot() + 180), -20, 0, (int) (255 << 24 | 255 << 16 | 255 << 8 | 255), false);
 		}
 	}
 }

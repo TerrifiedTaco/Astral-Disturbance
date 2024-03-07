@@ -4,7 +4,7 @@
   "definition": {
     "commandName": "should_there_be_a_comically_large_letter_e_in_the_skybox",
     "type": "STANDARD",
-    "permissionLevel": "No requirement",
+    "permissionLevel": "3",
     "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"logic\"><field name=\"name\">exist</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">SkyboxDrawToggle</field></block></statement></block></next></block></xml>"
   }
 }
