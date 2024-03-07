@@ -34,9 +34,65 @@
         ]
       },
       "path": "~/Baubles"
+    },
+    {
+      "name": "SkyboxDrawTest",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skybox_draw_test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/essorant/astraldisturbance/command/SkyboxDrawTestCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SkyboxDrawToggle",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skybox_draw_toggle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/essorant/astraldisturbance/procedures/SkyboxDrawToggleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SkyboxDrawTestProc",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skybox_draw_test_proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/essorant/astraldisturbance/procedures/SkyboxDrawTestProcProcedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "put_e_into_the_sky",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
