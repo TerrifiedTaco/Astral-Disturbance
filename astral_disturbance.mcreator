@@ -38,7 +38,6 @@
     {
       "name": "SkyboxDrawTest",
       "type": "command",
-      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "skybox_draw_test",
@@ -97,6 +96,12 @@
       "type": "logic",
       "scope": "world",
       "value": "false"
+    },
+    {
+      "name": "e_doing_donuts",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
     }
   ],
   "sound_elements": [],
