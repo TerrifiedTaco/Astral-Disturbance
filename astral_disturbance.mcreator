@@ -4,13 +4,13 @@
       "name": "FloaterBauble",
       "type": "curiosbauble",
       "sortid": 2,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "floater_bauble",
       "metadata": {
         "files": [
-          "src/main/resources/assets/astral_disturbance/models/item/floater_bauble.json",
-          "src/main/java/net/essorant/astraldisturbance/item/FloaterBaubleItem.java"
+          "src/main/java/net/essorant/astraldisturbance/item/FloaterBaubleItem.java",
+          "src/main/resources/assets/astral_disturbance/models/item/floater_bauble.json"
         ]
       },
       "path": "~/Baubles"
@@ -19,7 +19,7 @@
       "name": "FloaterBaubleWhileBaubleIsEquippedTick",
       "type": "procedure",
       "sortid": 1,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "floater_bauble_while_bauble_is_equipped_tick",
       "metadata": {
@@ -39,7 +39,7 @@
       "name": "SkyboxDrawTest",
       "type": "command",
       "sortid": 3,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "skybox_draw_test",
       "metadata": {
@@ -52,7 +52,7 @@
       "name": "SkyboxDrawToggle",
       "type": "procedure",
       "sortid": 1,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "skybox_draw_toggle",
       "metadata": {
@@ -75,7 +75,7 @@
       "name": "SkyboxDrawTestProc",
       "type": "procedure",
       "sortid": 2,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "skybox_draw_test_proc",
       "metadata": {
@@ -90,6 +90,52 @@
           {
             "name": "world",
             "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "H",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "h",
+      "metadata": {
+        "files": [
+          "src/main/java/net/essorant/astraldisturbance/procedures/HProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "DoH",
+      "type": "command",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "do_h",
+      "metadata": {
+        "files": [
+          "src/main/java/net/essorant/astraldisturbance/command/DoHCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "G",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "g",
+      "metadata": {
+        "files": [
+          "src/main/java/net/essorant/astraldisturbance/procedures/GProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
           }
         ]
       }
