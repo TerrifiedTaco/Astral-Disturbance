@@ -120,7 +120,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "CraterSpreadBlockUpdateTick"
+      "name": "BiomeSpreadBlockUpdateTick"
     },
     "generateFeature": false,
     "restrictionBiomes": [],
