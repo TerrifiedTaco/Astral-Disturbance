@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "astral_disturbance:block/gravity_placer_block"
+    }
+  }
+}

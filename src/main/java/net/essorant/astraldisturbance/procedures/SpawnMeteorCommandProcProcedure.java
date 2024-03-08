@@ -4,12 +4,9 @@ import net.minecraftforge.eventbus.api.Event;
 
 import javax.annotation.Nullable;
 
-public class GProcedure {
-	public static void execute(CommandContext<CommandSourceStack> arguments) {
-		double posX = 0;
-		double posY = 0;
-		double posZ = 0;
-		posX = new Object() {
+public class SpawnMeteorCommandProcProcedure {
+	public static void execute(LevelAccessor world, double x, double y, double z, CommandContext<CommandSourceStack> arguments) {
+		SpawnMeteorProcProcedure.execute(world, (new Object() {
 			public double getX() {
 				try {
 					return BlockPosArgument.getLoadedBlockPos(arguments, "position").getX();
@@ -18,8 +15,7 @@ public class GProcedure {
 					return 0;
 				}
 			}
-		}.getX();
-		posY = new Object() {
+		}.getX()), (new Object() {
 			public double getY() {
 				try {
 					return BlockPosArgument.getLoadedBlockPos(arguments, "position").getY();
@@ -28,8 +24,7 @@ public class GProcedure {
 					return 0;
 				}
 			}
-		}.getY();
-		posZ = new Object() {
+		}.getY()), (new Object() {
 			public double getZ() {
 				try {
 					return BlockPosArgument.getLoadedBlockPos(arguments, "position").getZ();
@@ -38,7 +33,6 @@ public class GProcedure {
 					return 0;
 				}
 			}
-		}.getZ();
-		HProcedure.execute(posX, posY, posZ);
+		}.getZ()));
 	}
 }
