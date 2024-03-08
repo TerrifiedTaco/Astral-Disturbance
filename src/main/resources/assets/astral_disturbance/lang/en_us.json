@@ -1,3 +1,5 @@
 {
-  "item.astral_disturbance.floater_bauble": "Floater Bauble"
+  "item.astral_disturbance.floater_bauble": "Floater Bauble",
+  "block.astral_disturbance.crater_spread_block": "Crater Spread Block",
+  "block.astral_disturbance.gravity_placer_block": "Crater Spread Block"
 }

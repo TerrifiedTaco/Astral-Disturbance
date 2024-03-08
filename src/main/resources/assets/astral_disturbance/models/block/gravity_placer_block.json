@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "astral_disturbance:block/gravity_placer",
+    "up": "astral_disturbance:block/gravity_placer",
+    "north": "astral_disturbance:block/gravity_placer",
+    "east": "astral_disturbance:block/gravity_placer",
+    "south": "astral_disturbance:block/gravity_placer",
+    "west": "astral_disturbance:block/gravity_placer",
+    "particle": "astral_disturbance:block/gravity_placer"
+  },
+  "render_type": "solid"
+}

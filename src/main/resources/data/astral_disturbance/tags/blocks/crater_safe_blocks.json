@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "astral_disturbance:crater_spread_block",
+    "minecraft:air",
+    "minecraft:cave_air",
+    "minecraft:void_air",
+    "minecraft:amethyst_block",
+    "minecraft:bedrock",
+    "minecraft:barrier",
+    "minecraft:structure_void",
+    "minecraft:command_block",
+    "minecraft:repeating_command_block",
+    "minecraft:chain_command_block"
+  ]
+}

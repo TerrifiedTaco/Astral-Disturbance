@@ -12,17 +12,16 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
+import net.minecraft.commands.arguments.coordinates.BlockPosArgument;
 import net.minecraft.commands.Commands;
 
-import net.essorant.astraldisturbance.procedures.SkyboxDrawToggleProcedure;
-
-import com.mojang.brigadier.arguments.BoolArgumentType;
+import net.essorant.astraldisturbance.procedures.SpawnMeteorProcProcedure;
 
 @Mod.EventBusSubscriber
-public class SkyboxDrawTestCommand {
+public class SpawnMeteorCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("should_there_be_a_comically_large_letter_e_in_the_skybox").requires(s -> s.hasPermission(3)).then(Commands.argument("exist", BoolArgumentType.bool()).executes(arguments -> {
+		event.getDispatcher().register(Commands.literal("spawnmeteor").requires(s -> s.hasPermission(3)).then(Commands.argument("location", BlockPosArgument.blockPos()).executes(arguments -> {
 			Level world = arguments.getSource().getUnsidedLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();
@@ -34,7 +33,7 @@ public class SkyboxDrawTestCommand {
 			if (entity != null)
 				direction = entity.getDirection();
 
-			SkyboxDrawToggleProcedure.execute(world, arguments);
+			SpawnMeteorProcProcedure.execute(world, x, y, z);
 			return 0;
 		})));
 	}

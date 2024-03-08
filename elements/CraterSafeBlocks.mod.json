@@ -1,0 +1,49 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:CraterSpreadBlock"
+      },
+      {
+        "value": "Blocks.AIR"
+      },
+      {
+        "value": "Blocks.CAVE_AIR"
+      },
+      {
+        "value": "Blocks.VOID_AIR"
+      },
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      },
+      {
+        "value": "Blocks.BEDROCK"
+      },
+      {
+        "value": "Blocks.BARRIER"
+      },
+      {
+        "value": "Blocks.STRUCTURE_VOID"
+      },
+      {
+        "value": "Blocks.COMMAND_BLOCK"
+      },
+      {
+        "value": "Blocks.REPEATING_COMMAND_BLOCK"
+      },
+      {
+        "value": "Blocks.CHAIN_COMMAND_BLOCK"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "crater_safe_blocks",
+    "namespace": "mod"
+  }
+}
