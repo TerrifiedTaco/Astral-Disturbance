@@ -195,7 +195,7 @@
           "src/main/resources/data/astral_disturbance/tags/blocks/crater_safe_blocks.json"
         ]
       },
-      "path": "~/Meteor"
+      "path": "~/Tags"
     },
     {
       "name": "CraterSpreadBlock",
@@ -444,7 +444,7 @@
           "src/main/resources/data/astral_disturbance/tags/blocks/crater_ignite.json"
         ]
       },
-      "path": "~/Meteor"
+      "path": "~/Tags"
     },
     {
       "name": "MeteoriteBiome",
@@ -456,20 +456,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/astral_disturbance/worldgen/biome/meteorite_biome.json"
-        ]
-      },
-      "path": "~/Meteor"
-    },
-    {
-      "name": "SpawnMeteoriteBiome",
-      "type": "function",
-      "sortid": 23,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spawn_meteorite_biome",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/astral_disturbance/functions/spawn_meteorite_biome.mcfunction"
         ]
       },
       "path": "~/Meteor"
@@ -523,6 +509,37 @@
         ]
       },
       "path": "~/Meteor"
+    },
+    {
+      "name": "AstralGrass",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "astral_grass",
+      "metadata": {
+        "files": [
+          "src/main/java/net/essorant/astraldisturbance/block/AstralGrassBlock.java",
+          "src/main/resources/assets/astral_disturbance/models/block/astral_grass.json",
+          "src/main/resources/assets/astral_disturbance/models/item/astral_grass.json",
+          "src/main/resources/assets/astral_disturbance/blockstates/astral_grass.json"
+        ]
+      },
+      "path": "~/Meteor/Blocks"
+    },
+    {
+      "name": "GrassLike",
+      "type": "tag",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_like",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/astral_disturbance/tags/items/grass_like.json"
+        ]
+      },
+      "path": "~/Tags"
     }
   ],
   "variable_elements": [
@@ -543,7 +560,8 @@
       "block.astral_disturbance.biome_spread_block": "Crater Spread Block",
       "block.astral_disturbance.astral_stone": "Astral Stone",
       "block.astral_disturbance.gravity_placer_block": "Crater Spread Block",
-      "block.astral_disturbance.astral_ore": "Astral Ore"
+      "block.astral_disturbance.astral_ore": "Astral Ore",
+      "block.astral_disturbance.astral_grass": "Astral Grass"
     }
   },
   "foldersRoot": {
@@ -561,6 +579,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Tags",
+        "children": []
       }
     ]
   },

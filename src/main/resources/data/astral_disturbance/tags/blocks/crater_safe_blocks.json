@@ -18,6 +18,10 @@
     "minecraft:bubble_column",
     "minecraft:lava",
     "astral_disturbance:gravity_placer_block",
-    "astral_disturbance:biome_spread_block"
+    "astral_disturbance:biome_spread_block",
+    "astral_disturbance:astral_stone",
+    "astral_disturbance:astral_ore_natural",
+    "astral_disturbance:astral_ore",
+    "astral_disturbance:astral_grass"
   ]
 }

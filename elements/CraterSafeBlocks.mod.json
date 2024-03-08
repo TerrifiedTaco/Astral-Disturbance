@@ -64,6 +64,18 @@
       },
       {
         "value": "CUSTOM:BiomeSpreadBlock"
+      },
+      {
+        "value": "CUSTOM:AstralStone"
+      },
+      {
+        "value": "CUSTOM:AstralOreNatural"
+      },
+      {
+        "value": "CUSTOM:AstralOre"
+      },
+      {
+        "value": "CUSTOM:AstralGrass"
       }
     ],
     "functions": [],
