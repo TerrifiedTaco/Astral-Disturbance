@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "astral_disturbance:block/biome_spread_block",
+    "up": "astral_disturbance:block/biome_spread_block",
+    "north": "astral_disturbance:block/biome_spread_block",
+    "east": "astral_disturbance:block/biome_spread_block",
+    "south": "astral_disturbance:block/biome_spread_block",
+    "west": "astral_disturbance:block/biome_spread_block",
+    "particle": "astral_disturbance:block/biome_spread_block"
+  },
+  "render_type": "solid"
+}

@@ -27,12 +27,12 @@ import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
 
-public class GravityPlacerBlockBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
+public class BiomeSpreadBlockBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(1, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
-	public GravityPlacerBlockBlockEntity(BlockPos position, BlockState state) {
-		super(AstralDisturbanceModBlockEntities.GRAVITY_PLACER_BLOCK.get(), position, state);
+	public BiomeSpreadBlockBlockEntity(BlockPos position, BlockState state) {
+		super(AstralDisturbanceModBlockEntities.BIOME_SPREAD_BLOCK.get(), position, state);
 	}
 
 	@Override
@@ -76,7 +76,7 @@ public class GravityPlacerBlockBlockEntity extends RandomizableContainerBlockEnt
 
 	@Override
 	public Component getDefaultName() {
-		return Component.literal("gravity_placer_block");
+		return Component.literal("biome_spread_block");
 	}
 
 	@Override
