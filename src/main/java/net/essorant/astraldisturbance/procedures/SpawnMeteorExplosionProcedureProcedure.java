@@ -1,5 +1,6 @@
 package net.essorant.astraldisturbance.procedures;
 
+import net.minecraft.world.entity.Entity;
 import net.minecraft.commands.arguments.coordinates.BlockPosArgument;
 import net.minecraft.commands.CommandSourceStack;
 
@@ -16,6 +17,7 @@ public class SpawnMeteorExplosionProcedureProcedure {
 		double endSize = 0;
 		double duration = 0;
 		double amount = 0;
+		Entity target = null;
 		posX = new Object() {
 			public double getX() {
 				try {

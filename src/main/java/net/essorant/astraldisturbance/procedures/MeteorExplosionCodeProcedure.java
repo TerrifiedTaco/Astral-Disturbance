@@ -20,14 +20,17 @@ import team.lodestar.lodestone.systems.particle.screen.*;
 
 import net.minecraft.world.level.LevelAccessor;
 
-import java.awt.Color;
+import java.awt.*;
+
+import static net.minecraft.util.Mth.*;
 
 public class MeteorExplosionCodeProcedure {
+	
     public static void execute(double posX, double posY, double posZ, double startSize, double endSize, double duration, double amount) {
         final LocalPlayer player = Minecraft.getInstance().player;
         if (player != null) {
         	Color startingColor = new Color(120, 80, 220);
-	        Color endingColor = new Color(150, 220, 255);
+			Color endingColor = new Color(150, 220, 255);
         	for (int i = 0; i < (int) amount; i++) {
 	                WorldParticleBuilder.create(LodestoneParticleRegistry.STAR_PARTICLE)
 	                    .setScaleData(GenericParticleData.create((float) startSize, ((float) endSize / (int) amount) * (i + 1)).build())
@@ -37,6 +40,7 @@ public class MeteorExplosionCodeProcedure {
 	                    .setLifetime(((int) duration / (int) amount) * (i + 1))
 	                    .addMotion(0, 0.00f, 0)
 	                    .enableNoClip()
+	                    .setForceSpawn(true)
 	                    .spawn(player.level(), posX, posY, posZ);
 	            startingColor = new Color(100, 140, 255);
 	            endingColor = new Color(170, 220, 255);
@@ -48,6 +52,7 @@ public class MeteorExplosionCodeProcedure {
 	                    .setLifetime(((int) duration / (int) amount) * (i + 1))
 	                    .addMotion(0, 0.00f, 0)
 	                    .enableNoClip()
+	                    .setForceSpawn(true)
 	                    .spawn(player.level(), posX, posY, posZ);
         	}
         }
