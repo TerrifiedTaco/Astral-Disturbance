@@ -1,0 +1,10 @@
+{
+  "_fv": 57,
+  "_type": "command",
+  "definition": {
+    "commandName": "meteor_explosion",
+    "type": "STANDARD",
+    "permissionLevel": "4",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"blockpos\"><field name=\"name\">position</field><statement name=\"args\"><block type=\"number_min\"><field name=\"name\">startSize</field><field name=\"min\">0</field><statement name=\"args\"><block type=\"number_min\"><field name=\"name\">endSize</field><field name=\"min\">0</field><statement name=\"args\"><block type=\"number_min\"><field name=\"name\">duration</field><field name=\"min\">0</field><statement name=\"args\"><block type=\"number_min\"><field name=\"name\">amount</field><field name=\"min\">0</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">SpawnMeteorExplosionProcedure</field></block></statement></block></statement></block></statement></block></statement></block></statement></block></next></block></xml>"
+  }
+}
