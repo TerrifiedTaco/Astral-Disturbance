@@ -23,7 +23,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.essorant.astraldisturbance.procedures.CraterSpreadBlockUpdateTickProcedure;
+import net.essorant.astraldisturbance.procedures.BiomeSpreadBlockUpdateTickProcedure;
 import net.essorant.astraldisturbance.block.entity.BiomeSpreadBlockBlockEntity;
 
 import java.util.List;
@@ -69,7 +69,7 @@ public class BiomeSpreadBlockBlock extends Block implements EntityBlock {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		CraterSpreadBlockUpdateTickProcedure.execute(world, x, y, z);
+		BiomeSpreadBlockUpdateTickProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 20);
 	}
 
