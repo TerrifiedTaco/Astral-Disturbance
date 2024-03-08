@@ -1,8 +1,14 @@
 package net.essorant.astraldisturbance.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.network.chat.Component;
+import net.minecraft.core.BlockPos;
 
-import javax.annotation.Nullable;
+import net.essorant.astraldisturbance.init.AstralDisturbanceModBlocks;
 
 public class SpawnMeteorProcProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -26,7 +32,7 @@ public class SpawnMeteorProcProcedure {
 				break;
 			}
 		}
-		world.setBlock(BlockPos.containing(x, y_pos, z), AstralDisturbanceModItems.DELETED_MOD_ELEMENT.get().defaultBlockState(), 3);
+		world.setBlock(BlockPos.containing(x, y_pos, z), AstralDisturbanceModBlocks.CRATER_SPREAD_BLOCK.get().defaultBlockState(), 3);
 		if (!world.isClientSide()) {
 			BlockPos _bp = BlockPos.containing(x, y_pos, z);
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);

@@ -9,8 +9,8 @@
       "registry_name": "floater_bauble",
       "metadata": {
         "files": [
-          "src/main/java/net/essorant/astraldisturbance/item/FloaterBaubleItem.java",
-          "src/main/resources/assets/astral_disturbance/models/item/floater_bauble.json"
+          "src/main/resources/assets/astral_disturbance/models/item/floater_bauble.json",
+          "src/main/java/net/essorant/astraldisturbance/item/FloaterBaubleItem.java"
         ]
       },
       "path": "~/Baubles"
@@ -255,16 +255,16 @@
       "name": "CraterSpreadBlock",
       "type": "block",
       "sortid": 7,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "crater_spread_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/astral_disturbance/models/block/crater_spread_block.json",
-          "src/main/java/net/essorant/astraldisturbance/block/entity/CraterSpreadBlockBlockEntity.java",
-          "src/main/resources/assets/astral_disturbance/blockstates/crater_spread_block.json",
           "src/main/resources/assets/astral_disturbance/models/item/crater_spread_block.json",
-          "src/main/java/net/essorant/astraldisturbance/block/CraterSpreadBlockBlock.java"
+          "src/main/resources/assets/astral_disturbance/blockstates/crater_spread_block.json",
+          "src/main/java/net/essorant/astraldisturbance/block/CraterSpreadBlockBlock.java",
+          "src/main/java/net/essorant/astraldisturbance/block/entity/CraterSpreadBlockBlockEntity.java",
+          "src/main/resources/assets/astral_disturbance/models/block/crater_spread_block.json"
         ]
       },
       "path": "~/Meteor"
@@ -309,16 +309,16 @@
       "name": "GravityPlacerBlock",
       "type": "block",
       "sortid": 9,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "gravity_placer_block",
       "metadata": {
         "files": [
-          "src/main/java/net/essorant/astraldisturbance/block/entity/GravityPlacerBlockBlockEntity.java",
-          "src/main/resources/assets/astral_disturbance/models/block/gravity_placer_block.json",
           "src/main/java/net/essorant/astraldisturbance/block/GravityPlacerBlockBlock.java",
+          "src/main/resources/assets/astral_disturbance/models/item/gravity_placer_block.json",
           "src/main/resources/assets/astral_disturbance/blockstates/gravity_placer_block.json",
-          "src/main/resources/assets/astral_disturbance/models/item/gravity_placer_block.json"
+          "src/main/java/net/essorant/astraldisturbance/block/entity/GravityPlacerBlockBlockEntity.java",
+          "src/main/resources/assets/astral_disturbance/models/block/gravity_placer_block.json"
         ]
       },
       "path": "~/Meteor"

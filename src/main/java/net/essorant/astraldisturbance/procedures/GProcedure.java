@@ -1,8 +1,10 @@
 package net.essorant.astraldisturbance.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.commands.arguments.coordinates.BlockPosArgument;
+import net.minecraft.commands.CommandSourceStack;
 
-import javax.annotation.Nullable;
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
+import com.mojang.brigadier.context.CommandContext;
 
 public class GProcedure {
 	public static void execute(CommandContext<CommandSourceStack> arguments) {

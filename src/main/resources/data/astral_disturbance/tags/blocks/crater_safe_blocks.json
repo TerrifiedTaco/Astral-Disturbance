@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "astral_disturbance:crater_spread_block",
     "minecraft:air",
     "minecraft:cave_air",
     "minecraft:void_air",
