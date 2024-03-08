@@ -4,7 +4,7 @@
       "name": "FloaterBauble",
       "type": "curiosbauble",
       "sortid": 2,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "floater_bauble",
       "metadata": {
@@ -19,7 +19,7 @@
       "name": "FloaterBaubleWhileBaubleIsEquippedTick",
       "type": "procedure",
       "sortid": 1,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "floater_bauble_while_bauble_is_equipped_tick",
       "metadata": {
@@ -39,7 +39,7 @@
       "name": "SkyboxDrawTest",
       "type": "command",
       "sortid": 3,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "skybox_draw_test",
       "metadata": {
@@ -52,7 +52,7 @@
       "name": "SkyboxDrawToggle",
       "type": "procedure",
       "sortid": 1,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "skybox_draw_toggle",
       "metadata": {
@@ -75,7 +75,7 @@
       "name": "SkyboxDrawTestProc",
       "type": "procedure",
       "sortid": 2,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "skybox_draw_test_proc",
       "metadata": {
@@ -255,7 +255,7 @@
       "name": "CraterSpreadBlock",
       "type": "block",
       "sortid": 7,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "crater_spread_block",
       "metadata": {
@@ -309,7 +309,7 @@
       "name": "GravityPlacerBlock",
       "type": "block",
       "sortid": 9,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "gravity_placer_block",
       "metadata": {
