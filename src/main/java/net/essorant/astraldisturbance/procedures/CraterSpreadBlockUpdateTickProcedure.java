@@ -1,8 +1,16 @@
 package net.essorant.astraldisturbance.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.Direction;
+import net.minecraft.core.BlockPos;
 
-import javax.annotation.Nullable;
+import net.essorant.astraldisturbance.init.AstralDisturbanceModBlocks;
 
 public class CraterSpreadBlockUpdateTickProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
@@ -26,7 +34,7 @@ public class CraterSpreadBlockUpdateTickProcedure {
 				y_off = directioniterator.getStepY() + y;
 				z_off = directioniterator.getStepZ() + z;
 				if (!(world.getBlockState(BlockPos.containing(x_off, y_off, z_off))).is(BlockTags.create(new ResourceLocation("astral_disturbance:crater_safe_blocks")))) {
-					world.setBlock(BlockPos.containing(x_off, y_off, z_off), AstralDisturbanceModItems.DELETED_MOD_ELEMENT.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(x_off, y_off, z_off), AstralDisturbanceModBlocks.CRATER_SPREAD_BLOCK.get().defaultBlockState(), 3);
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x_off, y_off, z_off);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -46,7 +54,7 @@ public class CraterSpreadBlockUpdateTickProcedure {
 				y_off = directioniterator.getStepY() + y;
 				z_off = directioniterator.getStepZ() + z;
 				if (!(world.getBlockState(BlockPos.containing(x_off, y_off, z_off))).is(BlockTags.create(new ResourceLocation("astral_disturbance:crater_safe_blocks")))) {
-					world.setBlock(BlockPos.containing(x_off, y_off, z_off), AstralDisturbanceModItems.DELETED_MOD_ELEMENT.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(x_off, y_off, z_off), AstralDisturbanceModBlocks.CRATER_SPREAD_BLOCK.get().defaultBlockState(), 3);
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x_off, y_off, z_off);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -60,7 +68,7 @@ public class CraterSpreadBlockUpdateTickProcedure {
 			}
 		} else {
 			if (Math.random() > (stage - 15) / 10 && !(world.getBlockState(BlockPos.containing(x_off, y_off, z_off))).is(BlockTags.create(new ResourceLocation("astral_disturbance:crater_safe_blocks")))) {
-				world.setBlock(BlockPos.containing(x, y + 1, z), AstralDisturbanceModItems.DELETED_MOD_ELEMENT.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 1, z), AstralDisturbanceModBlocks.CRATER_SPREAD_BLOCK.get().defaultBlockState(), 3);
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y + 1, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -74,7 +82,7 @@ public class CraterSpreadBlockUpdateTickProcedure {
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.AMETHYST_BLOCK.defaultBlockState(), 3);
 			return true;
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == AstralDisturbanceModItems.DELETED_MOD_ELEMENT.get()) {
+		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == AstralDisturbanceModBlocks.CRATER_SPREAD_BLOCK.get()) {
 			CraterSpreadBlockUpdateTickProcedure.execute(world, x, (y - 1), z);
 		}
 		return true;

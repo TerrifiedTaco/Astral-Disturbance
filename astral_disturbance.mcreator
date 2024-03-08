@@ -95,52 +95,6 @@
       }
     },
     {
-      "name": "G",
-      "type": "procedure",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "g",
-      "metadata": {
-        "files": [
-          "src/main/java/net/essorant/astraldisturbance/procedures/GProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          }
-        ]
-      }
-    },
-    {
-      "name": "H",
-      "type": "procedure",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "h",
-      "metadata": {
-        "files": [
-          "src/main/java/net/essorant/astraldisturbance/procedures/HProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
-      "name": "DoH",
-      "type": "command",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "do_h",
-      "metadata": {
-        "files": [
-          "src/main/java/net/essorant/astraldisturbance/command/DoHCommand.java"
-        ]
-      }
-    },
-    {
       "name": "CraterSpreadBlockUpdateTick",
       "type": "procedure",
       "sortid": 8,
@@ -255,7 +209,7 @@
       "name": "CraterSpreadBlock",
       "type": "block",
       "sortid": 7,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "crater_spread_block",
       "metadata": {
@@ -309,7 +263,7 @@
       "name": "GravityPlacerBlock",
       "type": "block",
       "sortid": 9,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "gravity_placer_block",
       "metadata": {
@@ -336,6 +290,52 @@
         ]
       },
       "path": "~/Meteor"
+    },
+    {
+      "name": "MeteorExplosionCode",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "meteor_explosion_code",
+      "metadata": {
+        "files": [
+          "src/main/java/net/essorant/astraldisturbance/procedures/MeteorExplosionCodeProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "SpawnMeteorExplosionProcedure",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_meteor_explosion_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/essorant/astraldisturbance/procedures/SpawnMeteorExplosionProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpawnMeteorExplosion",
+      "type": "command",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_meteor_explosion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/essorant/astraldisturbance/command/SpawnMeteorExplosionCommand.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
