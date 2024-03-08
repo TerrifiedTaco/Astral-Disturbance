@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "astral_disturbance:block/astral_stone_3",
+    "up": "astral_disturbance:block/astral_stone_6",
+    "north": "astral_disturbance:block/astral_stone_1",
+    "east": "astral_disturbance:block/astral_stone_5",
+    "south": "astral_disturbance:block/astral_stone_4",
+    "west": "astral_disturbance:block/astral_stone_2",
+    "particle": "astral_disturbance:block/astral_stone_3"
+  },
+  "render_type": "solid"
+}

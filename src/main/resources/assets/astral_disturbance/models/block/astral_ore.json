@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "astral_disturbance:block/astral_ore_5",
+    "up": "astral_disturbance:block/astral_ore_6",
+    "north": "astral_disturbance:block/astral_ore_2",
+    "east": "astral_disturbance:block/astral_ore_3",
+    "south": "astral_disturbance:block/astral_ore_4",
+    "west": "astral_disturbance:block/astral_ore_1",
+    "particle": "astral_disturbance:block/astral_ore_5"
+  },
+  "render_type": "solid"
+}

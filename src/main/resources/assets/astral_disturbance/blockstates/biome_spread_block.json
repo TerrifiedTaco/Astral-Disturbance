@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "astral_disturbance:block/biome_spread_block"
+    }
+  }
+}

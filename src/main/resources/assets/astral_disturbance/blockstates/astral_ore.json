@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "astral_disturbance:block/astral_ore"
+    },
+    "facing=east": {
+      "model": "astral_disturbance:block/astral_ore",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "astral_disturbance:block/astral_ore",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "astral_disturbance:block/astral_ore",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "astral_disturbance:block/astral_ore",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "astral_disturbance:block/astral_ore",
+      "x": 90
+    }
+  }
+}

@@ -11,6 +11,13 @@
     "minecraft:structure_void",
     "minecraft:command_block",
     "minecraft:repeating_command_block",
-    "minecraft:chain_command_block"
+    "minecraft:chain_command_block",
+    "minecraft:fire",
+    "minecraft:soul_fire",
+    "minecraft:water",
+    "minecraft:bubble_column",
+    "minecraft:lava",
+    "astral_disturbance:gravity_placer_block",
+    "astral_disturbance:biome_spread_block"
   ]
 }

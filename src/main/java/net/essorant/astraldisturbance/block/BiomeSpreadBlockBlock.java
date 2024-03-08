@@ -1,6 +1,8 @@
 
 package net.essorant.astraldisturbance.block;
 
+import net.minecraftforge.common.IPlantable;
+
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
@@ -18,16 +20,17 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.essorant.astraldisturbance.procedures.GravityPlacerBlockUpdateTickProcedure;
-import net.essorant.astraldisturbance.block.entity.GravityPlacerBlockBlockEntity;
+import net.essorant.astraldisturbance.procedures.CraterSpreadBlockUpdateTickProcedure;
+import net.essorant.astraldisturbance.block.entity.BiomeSpreadBlockBlockEntity;
 
 import java.util.List;
 import java.util.Collections;
 
-public class GravityPlacerBlockBlock extends Block implements EntityBlock {
-	public GravityPlacerBlockBlock() {
+public class BiomeSpreadBlockBlock extends Block implements EntityBlock {
+	public BiomeSpreadBlockBlock() {
 		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GRAVEL).strength(-1, 3600000));
 	}
 
@@ -39,6 +42,11 @@ public class GravityPlacerBlockBlock extends Block implements EntityBlock {
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 15;
+	}
+
+	@Override
+	public boolean canSustainPlant(BlockState state, BlockGetter world, BlockPos pos, Direction direction, IPlantable plantable) {
+		return true;
 	}
 
 	@Override
@@ -61,7 +69,7 @@ public class GravityPlacerBlockBlock extends Block implements EntityBlock {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		GravityPlacerBlockUpdateTickProcedure.execute(world, x, y, z);
+		CraterSpreadBlockUpdateTickProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 20);
 	}
 
@@ -73,7 +81,7 @@ public class GravityPlacerBlockBlock extends Block implements EntityBlock {
 
 	@Override
 	public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-		return new GravityPlacerBlockBlockEntity(pos, state);
+		return new BiomeSpreadBlockBlockEntity(pos, state);
 	}
 
 	@Override
