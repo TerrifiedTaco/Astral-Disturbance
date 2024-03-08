@@ -21,7 +21,7 @@ import net.essorant.astraldisturbance.procedures.SpawnMeteorProcProcedure;
 public class SpawnMeteorCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("spawnmeteor").requires(s -> s.hasPermission(3)).then(Commands.argument("location", BlockPosArgument.blockPos()).executes(arguments -> {
+		event.getDispatcher().register(Commands.literal("spawn_meteor").requires(s -> s.hasPermission(3)).then(Commands.argument("location", BlockPosArgument.blockPos()).executes(arguments -> {
 			Level world = arguments.getSource().getUnsidedLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();
@@ -33,7 +33,7 @@ public class SpawnMeteorCommand {
 			if (entity != null)
 				direction = entity.getDirection();
 
-			SpawnMeteorProcProcedure.execute(world, x, y, z);
+			SpawnMeteorProcProcedure.execute(world, arguments);
 			return 0;
 		})));
 	}

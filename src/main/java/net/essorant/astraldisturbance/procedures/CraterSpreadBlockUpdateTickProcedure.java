@@ -22,6 +22,7 @@ public class CraterSpreadBlockUpdateTickProcedure {
 		double y_off = 0;
 		double z_off = 0;
 		double stage = 0;
+		Direction playerLookDirection = Direction.NORTH;
 		stage = new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -98,8 +99,13 @@ public class CraterSpreadBlockUpdateTickProcedure {
 			}
 			return true;
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == AstralDisturbanceModBlocks.CRATER_SPREAD_BLOCK.get()) {
-			CraterSpreadBlockUpdateTickProcedure.execute(world, x, (y - 1), z);
+		for (Direction directioniterator : Direction.Plane.HORIZONTAL) {
+			x_off = directioniterator.getStepX() + x;
+			y_off = directioniterator.getStepY() + y;
+			z_off = directioniterator.getStepZ() + z;
+			if ((world.getBlockState(BlockPos.containing(x_off, y_off, z_off))).getBlock() == AstralDisturbanceModBlocks.CRATER_SPREAD_BLOCK.get()) {
+				CraterSpreadBlockUpdateTickProcedure.execute(world, x_off, y_off, z_off);
+			}
 		}
 		return true;
 	}

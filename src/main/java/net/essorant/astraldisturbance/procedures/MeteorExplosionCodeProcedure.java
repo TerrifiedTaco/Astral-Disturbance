@@ -25,14 +25,13 @@ public class MeteorExplosionCodeProcedure {
         if (player != null) {
         	Color startingColor = new Color(120, 80, 220);
 	        Color endingColor = new Color(150, 220, 255);
-        	int i = 0;
-        	while (i < (int) amount) {
+        	for (double i = 0; i < amount; i++) {
 	                WorldParticleBuilder.create(LodestoneParticleRegistry.STAR_PARTICLE)
 	                    .setScaleData(GenericParticleData.create((float) startSize, (float) endSize).build())
 	                    .setTransparencyData(GenericParticleData.create(0.75f, 0.25f).build())
 	                    .setColorData(ColorParticleData.create(startingColor, endingColor).setCoefficient(1.4f).setEasing(Easing.BOUNCE_IN_OUT).build())
 	                    .setSpinData(SpinParticleData.create(0.2f, 0.4f).setSpinOffset((player.level().getGameTime() * 0.2f) % 6.28f).setEasing(Easing.QUARTIC_IN).build())
-	                    .setLifetime((int) duration + (i * 5))
+	                    .setLifetime((int) (duration + (i * 5)))
 	                    .addMotion(0, 0.00f, 0)
 	                    .enableNoClip()
 	                    .spawn(player.level(), posX, posY, posZ);
@@ -45,11 +44,10 @@ public class MeteorExplosionCodeProcedure {
 	                    .setTransparencyData(GenericParticleData.create(0.40f, 0.30f).build())
 	                    .setColorData(ColorParticleData.create(startingColor2, endingColor2).setCoefficient(1.4f).setEasing(Easing.BOUNCE_IN_OUT).build())
 	                    .setSpinData(SpinParticleData.create(0.2f, 0.4f).setSpinOffset((player.level().getGameTime() * 0.2f) % 6.28f).setEasing(Easing.QUARTIC_IN).build())
-	                    .setLifetime((int) duration + (i * 5))
+	                    .setLifetime((int) (duration + (i * 5)))
 	                    .addMotion(0, 0.00f, 0)
 	                    .enableNoClip()
 	                    .spawn(player.level(), posX, posY, posZ);
-	            i++;
         	}
         }
     }

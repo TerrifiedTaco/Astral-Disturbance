@@ -7,16 +7,50 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
+import net.minecraft.commands.arguments.coordinates.BlockPosArgument;
+import net.minecraft.commands.CommandSourceStack;
 
 import net.essorant.astraldisturbance.init.AstralDisturbanceModBlocks;
 
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
+import com.mojang.brigadier.context.CommandContext;
+
 public class SpawnMeteorProcProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z) {
+	public static void execute(LevelAccessor world, CommandContext<CommandSourceStack> arguments) {
 		double x_pos = 0;
 		double y_pos = 0;
 		double z_pos = 0;
-		y_pos = y;
-		while ((world.getBlockState(BlockPos.containing(x, y_pos, z))).getBlock() == Blocks.AIR) {
+		x_pos = new Object() {
+			public double getX() {
+				try {
+					return BlockPosArgument.getLoadedBlockPos(arguments, "location").getX();
+				} catch (CommandSyntaxException e) {
+					e.printStackTrace();
+					return 0;
+				}
+			}
+		}.getX();
+		y_pos = new Object() {
+			public double getY() {
+				try {
+					return BlockPosArgument.getLoadedBlockPos(arguments, "location").getY();
+				} catch (CommandSyntaxException e) {
+					e.printStackTrace();
+					return 0;
+				}
+			}
+		}.getY();
+		z_pos = new Object() {
+			public double getZ() {
+				try {
+					return BlockPosArgument.getLoadedBlockPos(arguments, "location").getZ();
+				} catch (CommandSyntaxException e) {
+					e.printStackTrace();
+					return 0;
+				}
+			}
+		}.getZ();
+		while ((world.getBlockState(BlockPos.containing(x_pos, y_pos, z_pos))).getBlock() == Blocks.AIR) {
 			y_pos = 1 - y_pos;
 			if (y_pos < 0) {
 				if (!world.isClientSide() && world.getServer() != null)
@@ -24,7 +58,7 @@ public class SpawnMeteorProcProcedure {
 				break;
 			}
 		}
-		while (!world.canSeeSkyFromBelowWater(BlockPos.containing(x, y_pos, z))) {
+		while (!world.canSeeSkyFromBelowWater(BlockPos.containing(x_pos, y_pos, z_pos))) {
 			y_pos = 1 + y_pos;
 			if (y_pos > 256) {
 				if (!world.isClientSide() && world.getServer() != null)
@@ -32,9 +66,9 @@ public class SpawnMeteorProcProcedure {
 				break;
 			}
 		}
-		world.setBlock(BlockPos.containing(x, y_pos, z), AstralDisturbanceModBlocks.CRATER_SPREAD_BLOCK.get().defaultBlockState(), 3);
+		world.setBlock(BlockPos.containing(x_pos, y_pos, z_pos), AstralDisturbanceModBlocks.CRATER_SPREAD_BLOCK.get().defaultBlockState(), 3);
 		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y_pos, z);
+			BlockPos _bp = BlockPos.containing(x_pos, y_pos, z_pos);
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
