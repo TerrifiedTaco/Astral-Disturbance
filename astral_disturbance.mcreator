@@ -295,7 +295,7 @@
       "name": "MeteorExplosionCode",
       "type": "procedure",
       "sortid": 12,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "meteor_explosion_code",
       "metadata": {
