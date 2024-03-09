@@ -79,9 +79,6 @@
       "locked_code": false,
       "registry_name": "skybox_draw_test_proc",
       "metadata": {
-        "files": [
-          "src/main/java/net/essorant/astraldisturbance/procedures/SkyboxDrawTestProcProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -590,6 +587,52 @@
         ]
       },
       "path": "~/Meteor/Blocks"
+    },
+    {
+      "name": "ScreenshakeCommand",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "screenshake_command",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Screenshake"
+    },
+    {
+      "name": "Screenshake",
+      "type": "command",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "screenshake",
+      "metadata": {
+        "files": [
+          "src/main/java/net/essorant/astraldisturbance/command/ScreenshakeCommand.java"
+        ]
+      },
+      "path": "~/Screenshake"
+    },
+    {
+      "name": "DoScreenshake",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "do_screenshake",
+      "metadata": {
+        "files": [
+          "src/main/java/net/essorant/astraldisturbance/procedures/DoScreenshakeProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Screenshake"
     }
   ],
   "variable_elements": [

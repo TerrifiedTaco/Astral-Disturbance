@@ -64,6 +64,7 @@ public class SpawnMeteorProcProcedure {
 		}
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x_pos, y_pos, z_pos), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-					"meteor_explosion ~ ~ ~ 1 250 300 200");
+					"/meteor_explosion ~ ~5 ~ 10 150 600 400");
+		DoScreenshakeProcedure.execute(390, 0.5f);
 	}
 }
