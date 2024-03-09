@@ -11,7 +11,7 @@
     "baubleModel": "Default",
     "baubleModelTexture": "",
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:AstralDisturbanceCreativeTab"
     },
     "stackSize": 1,
     "enchantability": 0,

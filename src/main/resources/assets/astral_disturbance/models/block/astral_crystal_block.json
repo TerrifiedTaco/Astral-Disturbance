@@ -1,9 +1,10 @@
 {
-  "parent": "astral_disturbance:custom/astral_crystal",
+  "parent": "astral_disturbance:custom/astral_crystal_block",
   "textures": {
     "all": "astral_disturbance:block/crystal_shard_block",
     "particle": "astral_disturbance:block/crystal_shard_block",
-    "0": "astral_disturbance:block/crystal_shard_block"
+    "0": "astral_disturbance:block/crystal_shard_block",
+    "missing": "astral_disturbance:block/"
   },
   "render_type": "cutout"
 }

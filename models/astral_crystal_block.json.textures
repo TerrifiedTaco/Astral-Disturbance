@@ -2,7 +2,8 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "crystal_shard_block"
+        "0": "crystal_shard_block",
+        "missing": ""
       },
       "name": "default"
     }

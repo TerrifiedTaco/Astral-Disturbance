@@ -3,14 +3,14 @@
     {
       "name": "FloaterBauble",
       "type": "curiosbauble",
-      "sortid": 2,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "floater_bauble",
       "metadata": {
         "files": [
-          "src/main/resources/assets/astral_disturbance/models/item/floater_bauble.json",
-          "src/main/java/net/essorant/astraldisturbance/item/FloaterBaubleItem.java"
+          "src/main/java/net/essorant/astraldisturbance/item/FloaterBaubleItem.java",
+          "src/main/resources/assets/astral_disturbance/models/item/floater_bauble.json"
         ]
       },
       "path": "~/Baubles"
@@ -18,7 +18,7 @@
     {
       "name": "FloaterBaubleWhileBaubleIsEquippedTick",
       "type": "procedure",
-      "sortid": 1,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "floater_bauble_while_bauble_is_equipped_tick",
@@ -30,6 +30,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -38,7 +54,7 @@
     {
       "name": "SkyboxDrawTest",
       "type": "command",
-      "sortid": 3,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "skybox_draw_test",
@@ -51,7 +67,7 @@
     {
       "name": "SkyboxDrawToggle",
       "type": "procedure",
-      "sortid": 1,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "skybox_draw_toggle",
@@ -74,7 +90,7 @@
     {
       "name": "SkyboxDrawTestProc",
       "type": "procedure",
-      "sortid": 2,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "skybox_draw_test_proc",
@@ -97,7 +113,7 @@
     {
       "name": "CraterSpreadBlockUpdateTick",
       "type": "procedure",
-      "sortid": 8,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crater_spread_block_update_tick",
@@ -130,7 +146,7 @@
     {
       "name": "SpawnMeteorProc",
       "type": "procedure",
-      "sortid": 4,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spawn_meteor_proc",
@@ -154,7 +170,7 @@
     {
       "name": "GravityPlacerBlockUpdateTick",
       "type": "procedure",
-      "sortid": 10,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gravity_placer_block_update_tick",
@@ -186,7 +202,7 @@
     {
       "name": "CraterSafeBlocks",
       "type": "tag",
-      "sortid": 11,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crater_safe_blocks",
@@ -200,17 +216,17 @@
     {
       "name": "CraterSpreadBlock",
       "type": "block",
-      "sortid": 7,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crater_spread_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/astral_disturbance/models/item/crater_spread_block.json",
-          "src/main/resources/assets/astral_disturbance/blockstates/crater_spread_block.json",
-          "src/main/java/net/essorant/astraldisturbance/block/CraterSpreadBlockBlock.java",
+          "src/main/resources/assets/astral_disturbance/models/block/crater_spread_block.json",
           "src/main/java/net/essorant/astraldisturbance/block/entity/CraterSpreadBlockBlockEntity.java",
-          "src/main/resources/assets/astral_disturbance/models/block/crater_spread_block.json"
+          "src/main/resources/assets/astral_disturbance/blockstates/crater_spread_block.json",
+          "src/main/resources/assets/astral_disturbance/models/item/crater_spread_block.json",
+          "src/main/java/net/essorant/astraldisturbance/block/CraterSpreadBlockBlock.java"
         ]
       },
       "path": "~/Meteor"
@@ -218,7 +234,7 @@
     {
       "name": "SpawnMeteorCommandProc",
       "type": "procedure",
-      "sortid": 6,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spawn_meteor_command_proc",
@@ -242,17 +258,17 @@
     {
       "name": "GravityPlacerBlock",
       "type": "block",
-      "sortid": 9,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gravity_placer_block",
       "metadata": {
         "files": [
-          "src/main/java/net/essorant/astraldisturbance/block/GravityPlacerBlockBlock.java",
-          "src/main/resources/assets/astral_disturbance/models/item/gravity_placer_block.json",
-          "src/main/resources/assets/astral_disturbance/blockstates/gravity_placer_block.json",
           "src/main/java/net/essorant/astraldisturbance/block/entity/GravityPlacerBlockBlockEntity.java",
-          "src/main/resources/assets/astral_disturbance/models/block/gravity_placer_block.json"
+          "src/main/resources/assets/astral_disturbance/models/block/gravity_placer_block.json",
+          "src/main/java/net/essorant/astraldisturbance/block/GravityPlacerBlockBlock.java",
+          "src/main/resources/assets/astral_disturbance/blockstates/gravity_placer_block.json",
+          "src/main/resources/assets/astral_disturbance/models/item/gravity_placer_block.json"
         ]
       },
       "path": "~/Meteor"
@@ -260,7 +276,7 @@
     {
       "name": "SpawnMeteor",
       "type": "command",
-      "sortid": 5,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spawn_meteor",
@@ -274,7 +290,7 @@
     {
       "name": "MeteorExplosionCode",
       "type": "procedure",
-      "sortid": 12,
+      "sortid": 19,
       "compiles": true,
       "locked_code": true,
       "registry_name": "meteor_explosion_code",
@@ -283,12 +299,13 @@
           "src/main/java/net/essorant/astraldisturbance/procedures/MeteorExplosionCodeProcedure.java"
         ],
         "dependencies": []
-      }
+      },
+      "path": "~/Meteor/vfx"
     },
     {
       "name": "SpawnMeteorExplosionProcedure",
       "type": "procedure",
-      "sortid": 13,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spawn_meteor_explosion_procedure",
@@ -302,12 +319,13 @@
             "type": "cmdcontext"
           }
         ]
-      }
+      },
+      "path": "~/Meteor/vfx"
     },
     {
       "name": "SpawnMeteorExplosion",
       "type": "command",
-      "sortid": 14,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spawn_meteor_explosion",
@@ -315,21 +333,22 @@
         "files": [
           "src/main/java/net/essorant/astraldisturbance/command/SpawnMeteorExplosionCommand.java"
         ]
-      }
+      },
+      "path": "~/Meteor/vfx"
     },
     {
       "name": "AstralStone",
       "type": "block",
-      "sortid": 15,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "astral_stone",
       "metadata": {
         "files": [
-          "src/main/resources/assets/astral_disturbance/models/item/astral_stone.json",
           "src/main/resources/assets/astral_disturbance/blockstates/astral_stone.json",
+          "src/main/resources/assets/astral_disturbance/models/block/astral_stone.json",
           "src/main/java/net/essorant/astraldisturbance/block/AstralStoneBlock.java",
-          "src/main/resources/assets/astral_disturbance/models/block/astral_stone.json"
+          "src/main/resources/assets/astral_disturbance/models/item/astral_stone.json"
         ]
       },
       "path": "~/Meteor/Blocks"
@@ -337,16 +356,16 @@
     {
       "name": "AstralOreNatural",
       "type": "block",
-      "sortid": 17,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "astral_ore_natural",
       "metadata": {
         "files": [
           "src/main/java/net/essorant/astraldisturbance/block/AstralOreNaturalBlock.java",
-          "src/main/resources/assets/astral_disturbance/models/block/astral_ore_natural.json",
+          "src/main/resources/assets/astral_disturbance/blockstates/astral_ore_natural.json",
           "src/main/resources/assets/astral_disturbance/models/item/astral_ore_natural.json",
-          "src/main/resources/assets/astral_disturbance/blockstates/astral_ore_natural.json"
+          "src/main/resources/assets/astral_disturbance/models/block/astral_ore_natural.json"
         ]
       },
       "path": "~/Meteor/Blocks"
@@ -354,7 +373,7 @@
     {
       "name": "RandomBlockRotation",
       "type": "procedure",
-      "sortid": 18,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "random_block_rotation",
@@ -386,16 +405,16 @@
     {
       "name": "AstralOre",
       "type": "block",
-      "sortid": 19,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "astral_ore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/astral_disturbance/models/item/astral_ore.json",
           "src/main/resources/assets/astral_disturbance/models/block/astral_ore.json",
-          "src/main/java/net/essorant/astraldisturbance/block/AstralOreBlock.java",
-          "src/main/resources/assets/astral_disturbance/blockstates/astral_ore.json"
+          "src/main/resources/assets/astral_disturbance/blockstates/astral_ore.json",
+          "src/main/resources/assets/astral_disturbance/models/item/astral_ore.json",
+          "src/main/java/net/essorant/astraldisturbance/block/AstralOreBlock.java"
         ]
       },
       "path": "~/Meteor/Blocks"
@@ -403,7 +422,7 @@
     {
       "name": "AstralOreNaturalBlockAdded",
       "type": "procedure",
-      "sortid": 20,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "astral_ore_natural_block_added",
@@ -435,7 +454,7 @@
     {
       "name": "CraterIgnite",
       "type": "tag",
-      "sortid": 21,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crater_ignite",
@@ -449,7 +468,7 @@
     {
       "name": "MeteoriteBiome",
       "type": "biome",
-      "sortid": 22,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "meteorite_biome",
@@ -463,16 +482,16 @@
     {
       "name": "BiomeSpreadBlock",
       "type": "block",
-      "sortid": 24,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "biome_spread_block",
       "metadata": {
         "files": [
-          "src/main/java/net/essorant/astraldisturbance/block/BiomeSpreadBlockBlock.java",
-          "src/main/java/net/essorant/astraldisturbance/block/entity/BiomeSpreadBlockBlockEntity.java",
           "src/main/resources/assets/astral_disturbance/models/item/biome_spread_block.json",
           "src/main/resources/assets/astral_disturbance/models/block/biome_spread_block.json",
+          "src/main/java/net/essorant/astraldisturbance/block/BiomeSpreadBlockBlock.java",
+          "src/main/java/net/essorant/astraldisturbance/block/entity/BiomeSpreadBlockBlockEntity.java",
           "src/main/resources/assets/astral_disturbance/blockstates/biome_spread_block.json"
         ]
       },
@@ -481,7 +500,7 @@
     {
       "name": "BiomeSpreadBlockUpdateTick",
       "type": "procedure",
-      "sortid": 25,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "biome_spread_block_update_tick",
@@ -513,7 +532,7 @@
     {
       "name": "WaterWalkingBauble",
       "type": "curiosbauble",
-      "sortid": 28,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_walking_bauble",
@@ -521,61 +540,6 @@
         "files": [
           "src/main/resources/assets/astral_disturbance/models/item/water_walking_bauble.json",
           "src/main/java/net/essorant/astraldisturbance/item/WaterWalkingBaubleItem.java"
-        ]
-      },
-      "path": "~/Baubles"
-    },
-    {
-      "name": "StepperBaubleBaubleIsEquipped",
-      "type": "procedure",
-      "sortid": 31,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stepper_bauble_bauble_is_equipped",
-      "metadata": {
-        "files": [
-          "src/main/java/net/essorant/astraldisturbance/procedures/StepperBaubleBaubleIsEquippedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Baubles"
-    },
-    {
-      "name": "StepperBauble",
-      "type": "curiosbauble",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stepper_bauble",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/astral_disturbance/models/item/stepper_bauble.json",
-          "src/main/java/net/essorant/astraldisturbance/item/StepperBaubleItem.java"
-        ]
-      },
-      "path": "~/Baubles"
-    },
-    {
-      "name": "StepperBaubleWhileBaubleIsEquippedTick",
-      "type": "procedure",
-      "sortid": 27,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stepper_bauble_while_bauble_is_equipped_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/essorant/astraldisturbance/procedures/StepperBaubleWhileBaubleIsEquippedTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
         ]
       },
       "path": "~/Baubles"
@@ -617,29 +581,9 @@
       "path": "~/Baubles"
     },
     {
-      "name": "StepperBaubleBaubleIsUnequipped",
-      "type": "procedure",
-      "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stepper_bauble_bauble_is_unequipped",
-      "metadata": {
-        "files": [
-          "src/main/java/net/essorant/astraldisturbance/procedures/StepperBaubleBaubleIsUnequippedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Baubles"
-    },
-    {
       "name": "AstralCrystalBlock",
       "type": "block",
-      "sortid": 28,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "astral_crystal_block",
@@ -654,42 +598,9 @@
       "path": "~/Meteor/Blocks"
     },
     {
-      "name": "AstralCrystalBlockNeighbourBlockChanges",
-      "type": "procedure",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "astral_crystal_block_neighbour_block_changes",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/essorant/astraldisturbance/procedures/AstralCrystalBlockNeighbourBlockChangesProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Meteor/Blocks"
-    },
-    {
       "name": "AstralGrass",
       "type": "block",
-      "sortid": 26,
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "astral_grass",
@@ -706,7 +617,7 @@
     {
       "name": "Screenshake",
       "type": "command",
-      "sortid": 31,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "screenshake",
@@ -720,7 +631,7 @@
     {
       "name": "ScreenshakeCommand",
       "type": "procedure",
-      "sortid": 30,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "screenshake_command",
@@ -740,7 +651,7 @@
     {
       "name": "GrassLike",
       "type": "tag",
-      "sortid": 27,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_like",
@@ -754,7 +665,7 @@
     {
       "name": "DoScreenshake",
       "type": "procedure",
-      "sortid": 32,
+      "sortid": 33,
       "compiles": true,
       "locked_code": true,
       "registry_name": "do_screenshake",
@@ -765,6 +676,17 @@
         "dependencies": []
       },
       "path": "~/Screenshake"
+    },
+    {
+      "name": "AstralDisturbanceCreativeTab",
+      "type": "tab",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "astral_disturbance_creative_tab",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [
@@ -778,14 +700,18 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.astral_disturbance.water_walking_bauble": "Water Walking Bauble",
       "item.astral_disturbance.floater_bauble": "Floater Bauble",
       "block.astral_disturbance.crater_spread_block": "Crater Spread Block",
       "biome.astral_disturbance.meteorite_biome": "Astral Wastes",
       "block.astral_disturbance.astral_stone": "Astral Stone",
       "block.astral_disturbance.gravity_placer_block": "Crater Spread Block",
       "block.astral_disturbance.astral_ore": "Astral Ore",
+      "block.astral_disturbance.astral_grass": "Astral Grass",
       "block.astral_disturbance.astral_ore_natural": "Budding Astral Ore",
-      "block.astral_disturbance.biome_spread_block": "Crater Spread Block"
+      "block.astral_disturbance.biome_spread_block": "Crater Spread Block",
+      "block.astral_disturbance.astral_crystal_block": "Astral Crystal Block",
+      "item_group.astral_disturbance.astral_disturbance_creative_tab": "Astral Disturbance"
     }
   },
   "foldersRoot": {
@@ -804,6 +730,10 @@
         "children": [
           {
             "name": "Blocks",
+            "children": []
+          },
+          {
+            "name": "vfx",
             "children": []
           }
         ]
