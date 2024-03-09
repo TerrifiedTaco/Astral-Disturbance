@@ -514,7 +514,7 @@
       "name": "WaterWalkingBauble",
       "type": "curiosbauble",
       "sortid": 28,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "water_walking_bauble",
       "metadata": {
@@ -529,7 +529,7 @@
       "name": "StepperBaubleBaubleIsEquipped",
       "type": "procedure",
       "sortid": 31,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "stepper_bauble_bauble_is_equipped",
       "metadata": {
@@ -549,7 +549,7 @@
       "name": "StepperBauble",
       "type": "curiosbauble",
       "sortid": 26,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "stepper_bauble",
       "metadata": {
@@ -564,7 +564,7 @@
       "name": "StepperBaubleWhileBaubleIsEquippedTick",
       "type": "procedure",
       "sortid": 27,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "stepper_bauble_while_bauble_is_equipped_tick",
       "metadata": {
@@ -584,7 +584,7 @@
       "name": "WaterWalkingBaubleWhileBaubleIsEquippedTick",
       "type": "procedure",
       "sortid": 29,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "water_walking_bauble_while_bauble_is_equipped_tick",
       "metadata": {
@@ -620,7 +620,7 @@
       "name": "StepperBaubleBaubleIsUnequipped",
       "type": "procedure",
       "sortid": 30,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "stepper_bauble_bauble_is_unequipped",
       "metadata": {
@@ -640,7 +640,7 @@
       "name": "AstralCrystalBlock",
       "type": "block",
       "sortid": 28,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "astral_crystal_block",
       "metadata": {
@@ -657,7 +657,7 @@
       "name": "AstralCrystalBlockNeighbourBlockChanges",
       "type": "procedure",
       "sortid": 29,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "astral_crystal_block_neighbour_block_changes",
       "metadata": {
@@ -690,7 +690,7 @@
       "name": "AstralGrass",
       "type": "block",
       "sortid": 26,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "astral_grass",
       "metadata": {
@@ -707,7 +707,7 @@
       "name": "Screenshake",
       "type": "command",
       "sortid": 31,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "screenshake",
       "metadata": {
@@ -721,7 +721,7 @@
       "name": "ScreenshakeCommand",
       "type": "procedure",
       "sortid": 30,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "screenshake_command",
       "metadata": {
@@ -779,13 +779,13 @@
   "language_map": {
     "en_us": {
       "item.astral_disturbance.floater_bauble": "Floater Bauble",
+      "block.astral_disturbance.astral_ore_natural": "Budding Astral Ore",
       "block.astral_disturbance.crater_spread_block": "Crater Spread Block",
       "biome.astral_disturbance.meteorite_biome": "Astral Wastes",
+      "block.astral_disturbance.biome_spread_block": "Crater Spread Block",
       "block.astral_disturbance.astral_stone": "Astral Stone",
       "block.astral_disturbance.gravity_placer_block": "Crater Spread Block",
-      "block.astral_disturbance.astral_ore": "Astral Ore",
-      "block.astral_disturbance.astral_ore_natural": "Budding Astral Ore",
-      "block.astral_disturbance.biome_spread_block": "Crater Spread Block"
+      "block.astral_disturbance.astral_ore": "Astral Ore"
     }
   },
   "foldersRoot": {
