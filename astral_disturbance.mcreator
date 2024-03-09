@@ -514,7 +514,7 @@
       "name": "WaterWalkingBauble",
       "type": "curiosbauble",
       "sortid": 28,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "water_walking_bauble",
       "metadata": {
@@ -565,7 +565,7 @@
       "name": "AstralCrystalBlock",
       "type": "block",
       "sortid": 28,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "astral_crystal_block",
       "metadata": {
@@ -582,7 +582,7 @@
       "name": "AstralGrass",
       "type": "block",
       "sortid": 26,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "astral_grass",
       "metadata": {
@@ -599,7 +599,7 @@
       "name": "Screenshake",
       "type": "command",
       "sortid": 31,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "screenshake",
       "metadata": {
@@ -613,7 +613,7 @@
       "name": "ScreenshakeCommand",
       "type": "procedure",
       "sortid": 30,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "screenshake_command",
       "metadata": {
