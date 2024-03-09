@@ -22,7 +22,7 @@ public class ScreenshakeCommand {
 	public static void registerCommand(RegisterCommandsEvent event) {
 		event.getDispatcher().register(Commands.literal("screenshake")
 
-				.then(Commands.argument("duration", DoubleArgumentType.doubleArg(0)).then(Commands.argument("intensity", DoubleArgumentType.doubleArg(0)).executes(arguments -> {
+				.then(Commands.argument("duration", DoubleArgumentType.doubleArg(1)).then(Commands.argument("intensity", DoubleArgumentType.doubleArg(0.5)).executes(arguments -> {
 					Level world = arguments.getSource().getUnsidedLevel();
 					double x = arguments.getSource().getPosition().x();
 					double y = arguments.getSource().getPosition().y();

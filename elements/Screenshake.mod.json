@@ -5,6 +5,6 @@
     "commandName": "screenshake",
     "type": "STANDARD",
     "permissionLevel": "No requirement",
-    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"number_min\"><field name=\"name\">duration</field><field name=\"min\">0</field><statement name=\"args\"><block type=\"number_min\"><field name=\"name\">intensity</field><field name=\"min\">0</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">ScreenshakeCommand</field></block></statement></block></statement></block></next></block></xml>"
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"number_min\"><field name=\"name\">duration</field><field name=\"min\">1</field><statement name=\"args\"><block type=\"number_min\"><field name=\"name\">intensity</field><field name=\"min\">0.5</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">ScreenshakeCommand</field></block></statement></block></statement></block></next></block></xml>"
   }
 }
