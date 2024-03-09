@@ -299,7 +299,8 @@
           "src/main/java/net/essorant/astraldisturbance/procedures/MeteorExplosionCodeProcedure.java"
         ],
         "dependencies": []
-      }
+      },
+      "path": "~/Meteor/vfx"
     },
     {
       "name": "SpawnMeteorExplosionProcedure",
@@ -318,7 +319,8 @@
             "type": "cmdcontext"
           }
         ]
-      }
+      },
+      "path": "~/Meteor/vfx"
     },
     {
       "name": "SpawnMeteorExplosion",
@@ -331,7 +333,8 @@
         "files": [
           "src/main/java/net/essorant/astraldisturbance/command/SpawnMeteorExplosionCommand.java"
         ]
-      }
+      },
+      "path": "~/Meteor/vfx"
     },
     {
       "name": "AstralStone",
@@ -778,8 +781,8 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.astral_disturbance.floater_bauble": "Floater Bauble",
       "item.astral_disturbance.water_walking_bauble": "Water Walking Bauble",
+      "item.astral_disturbance.floater_bauble": "Floater Bauble",
       "block.astral_disturbance.crater_spread_block": "Crater Spread Block",
       "biome.astral_disturbance.meteorite_biome": "Astral Wastes",
       "block.astral_disturbance.astral_stone": "Astral Stone",
