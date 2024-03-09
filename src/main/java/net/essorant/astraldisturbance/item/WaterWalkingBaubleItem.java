@@ -1,21 +1,11 @@
 
 package net.essorant.astraldisturbance.item;
 
-import top.theillusivec4.curios.api.type.capability.ICurioItem;
-import top.theillusivec4.curios.api.SlotContext;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.network.chat.Component;
-
-import net.essorant.astraldisturbance.procedures.WaterWalkingBaubleWhileBaubleIsEquippedTickProcedure;
-
-import java.util.List;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import javax.annotation.Nullable;
 
 public class WaterWalkingBaubleItem extends Item implements ICurioItem {
+
 	public WaterWalkingBaubleItem() {
 		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
 	}
@@ -29,4 +19,5 @@ public class WaterWalkingBaubleItem extends Item implements ICurioItem {
 	public void curioTick(SlotContext slotContext, ItemStack stack) {
 		WaterWalkingBaubleWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity().getX(), slotContext.entity().getY(), slotContext.entity().getZ(), slotContext.entity());
 	}
+
 }
