@@ -283,7 +283,8 @@
           "src/main/java/net/essorant/astraldisturbance/procedures/MeteorExplosionCodeProcedure.java"
         ],
         "dependencies": []
-      }
+      },
+      "path": "~/Meteor/vfx"
     },
     {
       "name": "SpawnMeteorExplosionProcedure",
@@ -302,7 +303,8 @@
             "type": "cmdcontext"
           }
         ]
-      }
+      },
+      "path": "~/Meteor/vfx"
     },
     {
       "name": "SpawnMeteorExplosion",
@@ -315,7 +317,8 @@
         "files": [
           "src/main/java/net/essorant/astraldisturbance/command/SpawnMeteorExplosionCommand.java"
         ]
-      }
+      },
+      "path": "~/Meteor/vfx"
     },
     {
       "name": "AstralStone",
