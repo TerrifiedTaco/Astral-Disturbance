@@ -30,6 +30,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -195,7 +211,7 @@
           "src/main/resources/data/astral_disturbance/tags/blocks/crater_safe_blocks.json"
         ]
       },
-      "path": "~/Meteor"
+      "path": "~/Tags"
     },
     {
       "name": "CraterSpreadBlock",
@@ -447,7 +463,7 @@
           "src/main/resources/data/astral_disturbance/tags/blocks/crater_ignite.json"
         ]
       },
-      "path": "~/Meteor"
+      "path": "~/Tags"
     },
     {
       "name": "MeteoriteBiome",
@@ -517,7 +533,7 @@
       "name": "WaterWalkingBauble",
       "type": "curiosbauble",
       "sortid": 28,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "water_walking_bauble",
       "metadata": {
@@ -568,15 +584,48 @@
       "name": "AstralCrystalBlock",
       "type": "block",
       "sortid": 28,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "astral_crystal_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/astral_disturbance/models/block/astral_crystal_block.json",
-          "src/main/java/net/essorant/astraldisturbance/block/AstralCrystalBlockBlock.java",
           "src/main/resources/assets/astral_disturbance/blockstates/astral_crystal_block.json",
-          "src/main/resources/assets/astral_disturbance/models/item/astral_crystal_block.json"
+          "src/main/resources/assets/astral_disturbance/models/block/astral_crystal_block.json",
+          "src/main/resources/assets/astral_disturbance/models/item/astral_crystal_block.json",
+          "src/main/java/net/essorant/astraldisturbance/block/AstralCrystalBlockBlock.java"
+        ]
+      },
+      "path": "~/Meteor/Blocks"
+    },
+    {
+      "name": "AstralCrystalBlockNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "astral_crystal_block_neighbour_block_changes",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/essorant/astraldisturbance/procedures/AstralCrystalBlockNeighbourBlockChangesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       },
       "path": "~/Meteor/Blocks"
@@ -585,7 +634,7 @@
       "name": "AstralGrass",
       "type": "block",
       "sortid": 26,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "astral_grass",
       "metadata": {
@@ -602,7 +651,7 @@
       "name": "Screenshake",
       "type": "command",
       "sortid": 31,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "screenshake",
       "metadata": {
@@ -616,7 +665,7 @@
       "name": "ScreenshakeCommand",
       "type": "procedure",
       "sortid": 30,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "screenshake_command",
       "metadata": {
@@ -662,6 +711,54 @@
       "path": "~/Screenshake"
     },
     {
+      "name": "SmallMeteorBloom",
+      "type": "plant",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_meteor_bloom",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/astral_disturbance/models/item/small_meteor_bloom.json",
+          "src/main/java/net/essorant/astraldisturbance/block/SmallMeteorBloomBlock.java",
+          "src/main/resources/assets/astral_disturbance/models/block/small_meteor_bloom.json",
+          "src/main/resources/assets/astral_disturbance/blockstates/small_meteor_bloom.json"
+        ]
+      },
+      "path": "~/Meteor/Blocks"
+    },
+    {
+      "name": "LargeMeteorBloom",
+      "type": "plant",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "large_meteor_bloom",
+      "metadata": {
+        "files": [
+          "src/main/java/net/essorant/astraldisturbance/block/LargeMeteorBloomBlock.java",
+          "src/main/resources/assets/astral_disturbance/models/item/large_meteor_bloom.json",
+          "src/main/resources/assets/astral_disturbance/blockstates/large_meteor_bloom.json",
+          "src/main/resources/assets/astral_disturbance/models/block/large_meteor_bloom.json"
+        ]
+      },
+      "path": "~/Meteor/Blocks"
+    },
+    {
+      "name": "FlowerLike",
+      "type": "tag",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flower_like",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/astral_disturbance/tags/items/flower_like.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
       "name": "AstralDisturbanceCreativeTab",
       "type": "tab",
       "sortid": 34,
@@ -685,16 +782,20 @@
   "language_map": {
     "en_us": {
       "item.astral_disturbance.floater_bauble": "Floater Bauble",
-      "block.astral_disturbance.astral_ore_natural": "Budding Astral Ore",
       "item.astral_disturbance.water_walking_bauble": "Water Walking Bauble",
       "block.astral_disturbance.crater_spread_block": "Crater Spread Block",
       "biome.astral_disturbance.meteorite_biome": "Astral Wastes",
-      "block.astral_disturbance.biome_spread_block": "Crater Spread Block",
-      "block.astral_disturbance.astral_crystal_block": "Astral Crystal Block",
       "block.astral_disturbance.astral_stone": "Astral Stone",
       "block.astral_disturbance.gravity_placer_block": "Crater Spread Block",
       "block.astral_disturbance.astral_ore": "Astral Ore",
-      "block.astral_disturbance.astral_grass": "Astral Grass"
+      "block.astral_disturbance.astral_grass": "Astral Grass",
+      "block.astral_disturbance.small_meteor_bloom": "Small Meteorite Bloom",
+      "block.astral_disturbance.astral_ore_natural": "Budding Astral Ore",
+      "item.astral_disturbance.stepper_bauble": "Stepper Bauble",
+      "block.astral_disturbance.biome_spread_block": "Crater Spread Block",
+      "block.astral_disturbance.astral_crystal_block": "Astral Crystal Block",
+      "item_group.astral_disturbance.astral_disturbance_creative_tab": "Astral Disturbance",
+      "block.astral_disturbance.large_meteor_bloom": "Large Meteorite Bloom"
     }
   },
   "foldersRoot": {

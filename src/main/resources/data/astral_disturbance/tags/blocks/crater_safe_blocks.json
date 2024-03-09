@@ -22,6 +22,8 @@
     "astral_disturbance:astral_ore_natural",
     "astral_disturbance:astral_ore",
     "astral_disturbance:astral_grass",
-    "astral_disturbance:astral_crystal_block"
+    "astral_disturbance:astral_crystal_block",
+    "astral_disturbance:small_meteor_bloom",
+    "astral_disturbance:large_meteor_bloom"
   ]
 }

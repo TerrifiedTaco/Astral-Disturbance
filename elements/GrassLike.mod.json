@@ -21,6 +21,9 @@
       },
       {
         "value": "Blocks.MOSS_BLOCK"
+      },
+      {
+        "value": "Blocks.DIRT#2"
       }
     ],
     "blocks": [],
