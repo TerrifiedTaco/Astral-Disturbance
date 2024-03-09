@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "crystal_shard_block"
+      },
+      "name": "default"
+    }
+  }
+}

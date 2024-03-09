@@ -540,6 +540,56 @@
         ]
       },
       "path": "~/Tags"
+    },
+    {
+      "name": "AstralCrystalBlock",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "astral_crystal_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/astral_disturbance/blockstates/astral_crystal_block.json",
+          "src/main/resources/assets/astral_disturbance/models/block/astral_crystal_block.json",
+          "src/main/resources/assets/astral_disturbance/models/item/astral_crystal_block.json",
+          "src/main/java/net/essorant/astraldisturbance/block/AstralCrystalBlockBlock.java"
+        ]
+      },
+      "path": "~/Meteor/Blocks"
+    },
+    {
+      "name": "AstralCrystalBlockNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "astral_crystal_block_neighbour_block_changes",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/essorant/astraldisturbance/procedures/AstralCrystalBlockNeighbourBlockChangesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Meteor/Blocks"
     }
   ],
   "variable_elements": [
@@ -558,6 +608,7 @@
       "block.astral_disturbance.crater_spread_block": "Crater Spread Block",
       "biome.astral_disturbance.meteorite_biome": "Astral Wastes",
       "block.astral_disturbance.biome_spread_block": "Crater Spread Block",
+      "block.astral_disturbance.astral_crystal_block": "Astral Crystal Block",
       "block.astral_disturbance.astral_stone": "Astral Stone",
       "block.astral_disturbance.gravity_placer_block": "Crater Spread Block",
       "block.astral_disturbance.astral_ore": "Astral Ore",
@@ -582,6 +633,10 @@
       },
       {
         "name": "Tags",
+        "children": []
+      },
+      {
+        "name": "Screenshake",
         "children": []
       }
     ]

@@ -30,6 +30,7 @@ public class AstralDisturbanceModTabs {
 			tabData.accept(AstralDisturbanceModBlocks.ASTRAL_STONE.get().asItem());
 			tabData.accept(AstralDisturbanceModBlocks.ASTRAL_ORE.get().asItem());
 			tabData.accept(AstralDisturbanceModBlocks.ASTRAL_GRASS.get().asItem());
+			tabData.accept(AstralDisturbanceModBlocks.ASTRAL_CRYSTAL_BLOCK.get().asItem());
 		}
 	}
 }

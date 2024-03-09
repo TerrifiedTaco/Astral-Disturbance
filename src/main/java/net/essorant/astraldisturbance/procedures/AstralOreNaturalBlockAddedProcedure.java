@@ -24,7 +24,7 @@ public class AstralOreNaturalBlockAddedProcedure {
 				y_off = y + directioniterator.getStepY();
 				z_off = z + directioniterator.getStepZ();
 				if ((world.getBlockState(BlockPos.containing(x_off, y_off, z_off))).getBlock() == Blocks.AIR) {
-					world.setBlock(BlockPos.containing(x_off, y_off, z_off), Blocks.AMETHYST_CLUSTER.defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(x_off, y_off, z_off), AstralDisturbanceModBlocks.ASTRAL_CRYSTAL_BLOCK.get().defaultBlockState(), 3);
 					{
 						Direction _dir = directioniterator;
 						BlockPos _pos = BlockPos.containing(x_off, y_off, z_off);

@@ -25,6 +25,7 @@ public class AstralDisturbanceModItems {
 	public static final RegistryObject<Item> ASTRAL_ORE = block(AstralDisturbanceModBlocks.ASTRAL_ORE);
 	public static final RegistryObject<Item> BIOME_SPREAD_BLOCK = block(AstralDisturbanceModBlocks.BIOME_SPREAD_BLOCK);
 	public static final RegistryObject<Item> ASTRAL_GRASS = block(AstralDisturbanceModBlocks.ASTRAL_GRASS);
+	public static final RegistryObject<Item> ASTRAL_CRYSTAL_BLOCK = block(AstralDisturbanceModBlocks.ASTRAL_CRYSTAL_BLOCK);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
