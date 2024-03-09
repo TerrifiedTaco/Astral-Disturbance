@@ -7,8 +7,8 @@ modId="astral_disturbance"
 version="0.0.1"
 displayName="Astral Disturbance"
 displayURL="https://github.com/TerrifiedTaco/Astral-Disturbance"
-credits="lodestone is great"
-authors="TerrifiedTaco, MrC08, Sanguine"
+credits="Sanguine (Artist)"
+authors="TerrifiedTaco, MrC08"
 
 [[dependencies.astral_disturbance]]
     modId="minecraft"
