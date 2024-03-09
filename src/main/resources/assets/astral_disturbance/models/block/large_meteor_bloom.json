@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "astral_disturbance:block/meteor_flower2",
+    "particle": "astral_disturbance:block/meteor_flower2"
+  },
+  "render_type": "cutout"
+}

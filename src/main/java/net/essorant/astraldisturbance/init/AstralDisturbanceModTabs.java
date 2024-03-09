@@ -33,6 +33,8 @@ public class AstralDisturbanceModTabs {
 			tabData.accept(AstralDisturbanceModBlocks.ASTRAL_ORE.get().asItem());
 			tabData.accept(AstralDisturbanceModBlocks.ASTRAL_GRASS.get().asItem());
 			tabData.accept(AstralDisturbanceModBlocks.ASTRAL_CRYSTAL_BLOCK.get().asItem());
+			tabData.accept(AstralDisturbanceModBlocks.SMALL_METEOR_BLOOM.get().asItem());
+			tabData.accept(AstralDisturbanceModBlocks.LARGE_METEOR_BLOOM.get().asItem());
 		}
 	}
 }

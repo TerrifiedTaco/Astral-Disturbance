@@ -172,6 +172,13 @@ public class BiomeSpreadBlockUpdateTickProcedure {
 		}.getItemStack(world, BlockPos.containing(x, y, z), 0));
 		if (itemToUse.is(ItemTags.create(new ResourceLocation("astral_disturbance:grass_like"))) && spread > Math.random() + 8) {
 			world.setBlock(BlockPos.containing(x, y, z), AstralDisturbanceModBlocks.ASTRAL_GRASS.get().defaultBlockState(), 3);
+			if ((new ItemStack((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock())).is(ItemTags.create(new ResourceLocation("astral_disturbance:flower_like")))) {
+				if (Math.random() < 0.5) {
+					world.setBlock(BlockPos.containing(x, y + 1, z), AstralDisturbanceModBlocks.LARGE_METEOR_BLOOM.get().defaultBlockState(), 3);
+				} else {
+					world.setBlock(BlockPos.containing(x, y + 1, z), AstralDisturbanceModBlocks.SMALL_METEOR_BLOOM.get().defaultBlockState(), 3);
+				}
+			}
 		} else {
 			world.setBlock(BlockPos.containing(x, y, z), AstralDisturbanceModBlocks.ASTRAL_STONE.get().defaultBlockState(), 3);
 			if (Math.random() < 0.02) {

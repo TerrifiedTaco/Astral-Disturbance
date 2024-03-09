@@ -18,6 +18,7 @@ import java.util.concurrent.atomic.AtomicReference;
 
 public class GravityPlacerBlockUpdateTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
+		double y_off = 0;
 		if (!world.isClientSide()) {
 			BlockPos _bp = BlockPos.containing(x, y, z);
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -64,9 +65,13 @@ public class GravityPlacerBlockUpdateTickProcedure {
 				}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() instanceof BlockItem _bi ? _bi.getBlock().defaultBlockState() : Blocks.AIR.defaultBlockState()), 3);
 			}
 		} else {
-			world.setBlock(BlockPos.containing(x, y - 1, z), AstralDisturbanceModBlocks.GRAVITY_PLACER_BLOCK.get().defaultBlockState(), 3);
+			y_off = y;
+			while (!world.getBlockState(BlockPos.containing(x, y_off - 1, z)).canOcclude() && y_off - 1 > -63) {
+				y_off = y_off - 1;
+			}
+			world.setBlock(BlockPos.containing(x, y_off + 1, z), AstralDisturbanceModBlocks.GRAVITY_PLACER_BLOCK.get().defaultBlockState(), 3);
 			{
-				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y - 1, z));
+				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y_off + 1, z));
 				if (_ent != null) {
 					final int _slotid = 0;
 					final ItemStack _setstack = (new Object() {

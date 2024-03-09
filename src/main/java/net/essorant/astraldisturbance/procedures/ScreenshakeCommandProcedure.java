@@ -1,8 +1,9 @@
 package net.essorant.astraldisturbance.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.commands.CommandSourceStack;
 
-import javax.annotation.Nullable;
+import com.mojang.brigadier.context.CommandContext;
+import com.mojang.brigadier.arguments.DoubleArgumentType;
 
 public class ScreenshakeCommandProcedure {
 	public static void execute(CommandContext<CommandSourceStack> arguments) {

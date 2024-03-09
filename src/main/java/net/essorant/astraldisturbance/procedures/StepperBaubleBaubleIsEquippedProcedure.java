@@ -1,8 +1,6 @@
 package net.essorant.astraldisturbance.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
-
-import javax.annotation.Nullable;
+import net.minecraft.world.entity.Entity;
 
 public class StepperBaubleBaubleIsEquippedProcedure {
 	public static void execute(Entity entity) {

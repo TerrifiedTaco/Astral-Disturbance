@@ -1,10 +1,16 @@
 {
   "item.astral_disturbance.floater_bauble": "Floater Bauble",
-  "block.astral_disturbance.astral_ore_natural": "Budding Astral Ore",
+  "item.astral_disturbance.water_walking_bauble": "Water Walking Bauble",
   "block.astral_disturbance.crater_spread_block": "Crater Spread Block",
   "biome.astral_disturbance.meteorite_biome": "Astral Wastes",
-  "block.astral_disturbance.biome_spread_block": "Crater Spread Block",
   "block.astral_disturbance.astral_stone": "Astral Stone",
   "block.astral_disturbance.gravity_placer_block": "Crater Spread Block",
-  "block.astral_disturbance.astral_ore": "Astral Ore"
+  "block.astral_disturbance.astral_ore": "Astral Ore",
+  "block.astral_disturbance.astral_grass": "Astral Grass",
+  "block.astral_disturbance.small_meteor_bloom": "Small Meteorite Bloom",
+  "block.astral_disturbance.astral_ore_natural": "Budding Astral Ore",
+  "item.astral_disturbance.stepper_bauble": "Stepper Bauble",
+  "block.astral_disturbance.biome_spread_block": "Crater Spread Block",
+  "block.astral_disturbance.astral_crystal_block": "Astral Crystal Block",
+  "block.astral_disturbance.large_meteor_bloom": "Large Meteorite Bloom"
 }

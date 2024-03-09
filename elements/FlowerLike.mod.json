@@ -1,0 +1,106 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:SmallMeteorBloom"
+      },
+      {
+        "value": "CUSTOM:LargeMeteorBloom"
+      },
+      {
+        "value": "Blocks.SAPLING#0"
+      },
+      {
+        "value": "Blocks.SAPLING#1"
+      },
+      {
+        "value": "Blocks.SAPLING#2"
+      },
+      {
+        "value": "Blocks.SAPLING#3"
+      },
+      {
+        "value": "Blocks.SAPLING#4"
+      },
+      {
+        "value": "Blocks.SAPLING#5"
+      },
+      {
+        "value": "Blocks.MANGROVE_PROPAGULE"
+      },
+      {
+        "value": "Blocks.CHERRY_SAPLING"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#0"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#1"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#2"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#3"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#4"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#5"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#6"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#7"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#8"
+      },
+      {
+        "value": "Blocks.CORNFLOWER"
+      },
+      {
+        "value": "Blocks.LILY_OF_THE_VALLEY"
+      },
+      {
+        "value": "Blocks.WITHER_ROSE"
+      },
+      {
+        "value": "Blocks.TORCHFLOWER"
+      },
+      {
+        "value": "Blocks.PINK_PETALS"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#0"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#1"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#4"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#5"
+      },
+      {
+        "value": "Blocks.PITCHER_PLANT"
+      },
+      {
+        "value": "Blocks.YELLOW_FLOWER"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "flower_like",
+    "namespace": "mod"
+  }
+}
