@@ -30,22 +30,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -211,7 +195,7 @@
           "src/main/resources/data/astral_disturbance/tags/blocks/crater_safe_blocks.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Meteor"
     },
     {
       "name": "CraterSpreadBlock",
@@ -460,7 +444,7 @@
           "src/main/resources/data/astral_disturbance/tags/blocks/crater_ignite.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Meteor"
     },
     {
       "name": "MeteoriteBiome",
@@ -530,7 +514,7 @@
       "name": "WaterWalkingBauble",
       "type": "curiosbauble",
       "sortid": 28,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "water_walking_bauble",
       "metadata": {
@@ -600,7 +584,7 @@
       "name": "WaterWalkingBaubleWhileBaubleIsEquippedTick",
       "type": "procedure",
       "sortid": 29,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "water_walking_bauble_while_bauble_is_equipped_tick",
       "metadata": {
@@ -706,7 +690,7 @@
       "name": "AstralGrass",
       "type": "block",
       "sortid": 26,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "astral_grass",
       "metadata": {
@@ -737,7 +721,7 @@
       "name": "ScreenshakeCommand",
       "type": "procedure",
       "sortid": 30,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "screenshake_command",
       "metadata": {
@@ -829,6 +813,17 @@
         ]
       },
       "path": "~/Tags"
+    },
+    {
+      "name": "AstralDisturbanceCreativeTab",
+      "type": "tab",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "astral_disturbance_creative_tab",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [
@@ -874,6 +869,10 @@
         "children": [
           {
             "name": "Blocks",
+            "children": []
+          },
+          {
+            "name": "vfx",
             "children": []
           }
         ]

@@ -9,7 +9,7 @@
     "textureRight": "crystal_shard_block",
     "textureBack": "crystal_shard_block",
     "renderType": 2,
-    "customModelName": "astral_crystal:default",
+    "customModelName": "astral_crystal_block:default",
     "rotationMode": 4,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -25,11 +25,11 @@
     "boundingBoxes": [
       {
         "mx": 2.0,
-        "my": 0.0,
+        "my": 2.0,
         "mz": 2.0,
         "Mx": 14.0,
         "My": 14.0,
-        "Mz": 14.0,
+        "Mz": 16.0,
         "subtract": false
       }
     ],
@@ -42,7 +42,7 @@
     "hasGravity": false,
     "isWaterloggable": true,
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "CUSTOM:AstralDisturbanceCreativeTab"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -119,12 +119,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockAdded": {
-      "name": "AstralCrystalBlockNeighbourBlockChanges"
-    },
-    "onNeighbourBlockChanges": {
-      "name": "AstralCrystalBlockNeighbourBlockChanges"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [],
