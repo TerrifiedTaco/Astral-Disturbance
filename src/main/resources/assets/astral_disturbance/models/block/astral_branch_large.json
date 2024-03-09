@@ -1,9 +1,18 @@
 {
-  "parent": "astral_disturbance:custom/astraltreebranchlarge",
-  "textures": {
-    "all": "astral_disturbance:block/astraltreebranchlargetexture",
-    "particle": "astral_disturbance:block/astraltreebranchlargetexture",
-    "0": "astral_disturbance:block/astraltreebranchlargetexture"
+  "parent": "forge:item/default",
+  "loader": "forge:composite",
+  "children": {
+    "part1": {
+      "loader": "forge:obj",
+      "model": "astral_disturbance:models/item/astral_tree_branch_large.obj",
+      "emissive_ambient": true,
+      "textures": {
+        "#m_f65e3264-878a-0353-ec2b-97116cc1b406": "astral_disturbance:block/"
+      }
+    }
   },
-  "render_type": "cutout"
+  "textures": {
+    "particle": "astral_disturbance:block/astraltreebranchlargetexture"
+  },
+  "render_type": "solid"
 }
