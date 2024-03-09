@@ -2,6 +2,8 @@
   "replace": "false",
   "values": [
     "minecraft:air",
-    "astral_disturbance:floater_bauble"
+    "astral_disturbance:floater_bauble",
+    "astral_disturbance:stepper_bauble",
+    "astral_disturbance:water_walking_bauble"
   ]
 }

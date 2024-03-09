@@ -24,6 +24,8 @@ public class AstralDisturbanceModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(AstralDisturbanceModItems.FLOATER_BAUBLE.get());
+			tabData.accept(AstralDisturbanceModItems.STEPPER_BAUBLE.get());
+			tabData.accept(AstralDisturbanceModItems.WATER_WALKING_BAUBLE.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {

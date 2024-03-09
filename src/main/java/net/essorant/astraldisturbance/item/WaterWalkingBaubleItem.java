@@ -11,12 +11,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.network.chat.Component;
 
-import net.essorant.astraldisturbance.procedures.FloaterBaubleWhileBaubleIsEquippedTickProcedure;
+import net.essorant.astraldisturbance.procedures.WaterWalkingBaubleWhileBaubleIsEquippedTickProcedure;
 
 import java.util.List;
 
-public class FloaterBaubleItem extends Item implements ICurioItem {
-	public FloaterBaubleItem() {
+public class WaterWalkingBaubleItem extends Item implements ICurioItem {
+	public WaterWalkingBaubleItem() {
 		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
 	}
 
@@ -27,6 +27,6 @@ public class FloaterBaubleItem extends Item implements ICurioItem {
 
 	@Override
 	public void curioTick(SlotContext slotContext, ItemStack stack) {
-		FloaterBaubleWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity().getX(), slotContext.entity().getY(), slotContext.entity().getZ(), slotContext.entity());
+		WaterWalkingBaubleWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity().getX(), slotContext.entity().getY(), slotContext.entity().getZ(), slotContext.entity());
 	}
 }
