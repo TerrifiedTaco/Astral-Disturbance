@@ -10,8 +10,6 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
-import net.essorant.astraldisturbance.block.SmallMeteorBloomBlock;
-import net.essorant.astraldisturbance.block.LargeMeteorBloomBlock;
 import net.essorant.astraldisturbance.block.GravityPlacerBlockBlock;
 import net.essorant.astraldisturbance.block.CraterSpreadBlockBlock;
 import net.essorant.astraldisturbance.block.BiomeSpreadBlockBlock;
@@ -32,6 +30,4 @@ public class AstralDisturbanceModBlocks {
 	public static final RegistryObject<Block> BIOME_SPREAD_BLOCK = REGISTRY.register("biome_spread_block", () -> new BiomeSpreadBlockBlock());
 	public static final RegistryObject<Block> ASTRAL_GRASS = REGISTRY.register("astral_grass", () -> new AstralGrassBlock());
 	public static final RegistryObject<Block> ASTRAL_CRYSTAL_BLOCK = REGISTRY.register("astral_crystal_block", () -> new AstralCrystalBlockBlock());
-	public static final RegistryObject<Block> SMALL_METEOR_BLOOM = REGISTRY.register("small_meteor_bloom", () -> new SmallMeteorBloomBlock());
-	public static final RegistryObject<Block> LARGE_METEOR_BLOOM = REGISTRY.register("large_meteor_bloom", () -> new LargeMeteorBloomBlock());
 }
