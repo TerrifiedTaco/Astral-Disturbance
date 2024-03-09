@@ -8,8 +8,8 @@
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 2,
-    "customModelName": "astraltreebranchlarge:default",
+    "renderType": 3,
+    "customModelName": "astral_tree_branch_large:default",
     "rotationMode": 3,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -20,7 +20,7 @@
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "CUTOUT",
+    "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
