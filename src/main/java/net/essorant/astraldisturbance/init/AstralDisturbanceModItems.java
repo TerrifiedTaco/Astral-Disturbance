@@ -30,6 +30,7 @@ public class AstralDisturbanceModItems {
 	public static final RegistryObject<Item> ASTRAL_CRYSTAL_BLOCK = block(AstralDisturbanceModBlocks.ASTRAL_CRYSTAL_BLOCK);
 	public static final RegistryObject<Item> SMALL_METEOR_BLOOM = block(AstralDisturbanceModBlocks.SMALL_METEOR_BLOOM);
 	public static final RegistryObject<Item> LARGE_METEOR_BLOOM = block(AstralDisturbanceModBlocks.LARGE_METEOR_BLOOM);
+	public static final RegistryObject<Item> ASTRAL_BRANCH_LARGE = block(AstralDisturbanceModBlocks.ASTRAL_BRANCH_LARGE);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

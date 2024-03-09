@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "astral_disturbance:block/astral_branch_large"
+    },
+    "facing=east": {
+      "model": "astral_disturbance:block/astral_branch_large",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "astral_disturbance:block/astral_branch_large",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "astral_disturbance:block/astral_branch_large",
+      "y": 270
+    }
+  }
+}

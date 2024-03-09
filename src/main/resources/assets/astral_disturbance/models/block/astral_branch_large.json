@@ -1,0 +1,9 @@
+{
+  "parent": "astral_disturbance:custom/astraltreebranchlarge",
+  "textures": {
+    "all": "astral_disturbance:block/astraltreebranchlargetexture",
+    "particle": "astral_disturbance:block/astraltreebranchlargetexture",
+    "0": "astral_disturbance:block/astraltreebranchlargetexture"
+  },
+  "render_type": "cutout"
+}

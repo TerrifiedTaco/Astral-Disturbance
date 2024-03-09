@@ -20,6 +20,7 @@ import net.essorant.astraldisturbance.block.AstralOreNaturalBlock;
 import net.essorant.astraldisturbance.block.AstralOreBlock;
 import net.essorant.astraldisturbance.block.AstralGrassBlock;
 import net.essorant.astraldisturbance.block.AstralCrystalBlockBlock;
+import net.essorant.astraldisturbance.block.AstralBranchLargeBlock;
 import net.essorant.astraldisturbance.AstralDisturbanceMod;
 
 public class AstralDisturbanceModBlocks {
@@ -34,4 +35,5 @@ public class AstralDisturbanceModBlocks {
 	public static final RegistryObject<Block> ASTRAL_CRYSTAL_BLOCK = REGISTRY.register("astral_crystal_block", () -> new AstralCrystalBlockBlock());
 	public static final RegistryObject<Block> SMALL_METEOR_BLOOM = REGISTRY.register("small_meteor_bloom", () -> new SmallMeteorBloomBlock());
 	public static final RegistryObject<Block> LARGE_METEOR_BLOOM = REGISTRY.register("large_meteor_bloom", () -> new LargeMeteorBloomBlock());
+	public static final RegistryObject<Block> ASTRAL_BRANCH_LARGE = REGISTRY.register("astral_branch_large", () -> new AstralBranchLargeBlock());
 }
