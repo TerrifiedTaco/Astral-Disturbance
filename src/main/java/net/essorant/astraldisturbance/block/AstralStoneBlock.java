@@ -2,6 +2,7 @@
 package net.essorant.astraldisturbance.block;
 
 import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -32,7 +33,7 @@ public class AstralStoneBlock extends Block {
 	public static final DirectionProperty FACING = DirectionalBlock.FACING;
 
 	public AstralStoneBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.DEEPSLATE_TILES).strength(1.6f, 6.5f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.DEEPSLATE).sound(SoundType.DEEPSLATE_TILES).strength(1.6f, 6.5f).requiresCorrectToolForDrops());
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

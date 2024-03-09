@@ -16,6 +16,8 @@ import net.essorant.astraldisturbance.block.BiomeSpreadBlockBlock;
 import net.essorant.astraldisturbance.block.AstralStoneBlock;
 import net.essorant.astraldisturbance.block.AstralOreNaturalBlock;
 import net.essorant.astraldisturbance.block.AstralOreBlock;
+import net.essorant.astraldisturbance.block.AstralGrassBlock;
+import net.essorant.astraldisturbance.block.AstralCrystalBlockBlock;
 import net.essorant.astraldisturbance.AstralDisturbanceMod;
 
 public class AstralDisturbanceModBlocks {
@@ -26,4 +28,6 @@ public class AstralDisturbanceModBlocks {
 	public static final RegistryObject<Block> ASTRAL_ORE_NATURAL = REGISTRY.register("astral_ore_natural", () -> new AstralOreNaturalBlock());
 	public static final RegistryObject<Block> ASTRAL_ORE = REGISTRY.register("astral_ore", () -> new AstralOreBlock());
 	public static final RegistryObject<Block> BIOME_SPREAD_BLOCK = REGISTRY.register("biome_spread_block", () -> new BiomeSpreadBlockBlock());
+	public static final RegistryObject<Block> ASTRAL_GRASS = REGISTRY.register("astral_grass", () -> new AstralGrassBlock());
+	public static final RegistryObject<Block> ASTRAL_CRYSTAL_BLOCK = REGISTRY.register("astral_crystal_block", () -> new AstralCrystalBlockBlock());
 }

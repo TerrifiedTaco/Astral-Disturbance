@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "astral_disturbance:block/astral_stone_3",
+    "up": "astral_disturbance:block/astral_grass_top",
+    "north": "astral_disturbance:block/astral_grass",
+    "east": "astral_disturbance:block/astral_grass",
+    "south": "astral_disturbance:block/astral_grass",
+    "west": "astral_disturbance:block/astral_grass",
+    "particle": "astral_disturbance:block/astral_stone_3"
+  },
+  "render_type": "solid"
+}

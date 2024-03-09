@@ -3,14 +3,14 @@
   "_type": "block",
   "definition": {
     "texture": "astral_stone_3",
-    "textureTop": "astral_stone_6",
-    "textureLeft": "astral_stone_5",
-    "textureFront": "astral_stone_1",
-    "textureRight": "astral_stone_2",
-    "textureBack": "astral_stone_4",
+    "textureTop": "astral_grass_top",
+    "textureLeft": "astral_grass",
+    "textureFront": "astral_grass",
+    "textureRight": "astral_grass",
+    "textureBack": "astral_grass",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 4,
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -33,30 +33,30 @@
         "subtract": false
       }
     ],
-    "name": "Astral Stone",
+    "name": "Astral Grass",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.6,
-    "resistance": 6.5,
+    "hardness": 1.4000000000000001,
+    "resistance": 5.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "DECORATIONS"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": true,
+    "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
-    "plantsGrowOn": false,
+    "plantsGrowOn": true,
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "GRASS"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -65,7 +65,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "DEEPSLATE_GRAY",
+    "colorOnMap": "MAGENTA",
     "creativePickItem": {
       "value": ""
     },
@@ -81,7 +81,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "DEEPSLATE_TILES"
+      "value": "NYLIUM"
     },
     "breakSound": {
       "value": ""
@@ -119,9 +119,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockAdded": {
-      "name": "RandomBlockRotation"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [],

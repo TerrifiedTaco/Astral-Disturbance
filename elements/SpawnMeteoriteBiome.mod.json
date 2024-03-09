@@ -1,9 +1,0 @@
-{
-  "_fv": 57,
-  "_type": "function",
-  "definition": {
-    "code": "fillbiome ~3 ~12 ~3 ~-3 ~-3 ~-3 astral_disturbance:meteorite_biome",
-    "name": "spawn_meteorite_biome",
-    "namespace": "mod"
-  }
-}

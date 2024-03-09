@@ -4,6 +4,7 @@ package net.essorant.astraldisturbance.block;
 import org.checkerframework.checker.units.qual.s;
 
 import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -34,7 +35,7 @@ public class AstralOreBlock extends Block {
 	public static final DirectionProperty FACING = DirectionalBlock.FACING;
 
 	public AstralOreBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.AMETHYST).strength(2f, 8f).lightLevel(s -> 7).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.COLOR_MAGENTA).sound(SoundType.AMETHYST).strength(2f, 8f).lightLevel(s -> 7).requiresCorrectToolForDrops());
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "astral_disturbance:block/astral_crystal_block"
+    },
+    "facing=east": {
+      "model": "astral_disturbance:block/astral_crystal_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "astral_disturbance:block/astral_crystal_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "astral_disturbance:block/astral_crystal_block",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "astral_disturbance:block/astral_crystal_block",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "astral_disturbance:block/astral_crystal_block",
+      "x": 90
+    }
+  }
+}

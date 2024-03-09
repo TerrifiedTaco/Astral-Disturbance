@@ -2,45 +2,45 @@
   "_fv": 57,
   "_type": "block",
   "definition": {
-    "texture": "astral_stone_3",
-    "textureTop": "astral_stone_6",
-    "textureLeft": "astral_stone_5",
-    "textureFront": "astral_stone_1",
-    "textureRight": "astral_stone_2",
-    "textureBack": "astral_stone_4",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "crystal_shard_block",
+    "textureTop": "crystal_shard_block",
+    "textureLeft": "crystal_shard_block",
+    "textureFront": "crystal_shard_block",
+    "textureRight": "crystal_shard_block",
+    "textureBack": "crystal_shard_block",
+    "renderType": 2,
+    "customModelName": "astral_crystal:default",
     "rotationMode": 4,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "meteor_crystal",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
+        "mx": 2.0,
         "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
-        "My": 16.0,
-        "Mz": 16.0,
+        "mz": 2.0,
+        "Mx": 14.0,
+        "My": 14.0,
+        "Mz": 14.0,
         "subtract": false
       }
     ],
-    "name": "Astral Stone",
+    "name": "Astral Crystal Block",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.6,
-    "resistance": 6.5,
+    "hardness": 0.6,
+    "resistance": 4.0,
     "hasGravity": false,
-    "isWaterloggable": false,
+    "isWaterloggable": true,
     "creativeTab": {
       "value": "DECORATIONS"
     },
@@ -54,9 +54,9 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "AMETHYST"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -65,7 +65,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "DEEPSLATE_GRAY",
+    "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
     },
@@ -81,7 +81,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "DEEPSLATE_TILES"
+      "value": "AMETHYST_CLUSTER"
     },
     "breakSound": {
       "value": ""
@@ -98,7 +98,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 0,
+    "luminance": 5,
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "isBonemealable": false,
@@ -120,7 +120,10 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onBlockAdded": {
-      "name": "RandomBlockRotation"
+      "name": "AstralCrystalBlockNeighbourBlockChanges"
+    },
+    "onNeighbourBlockChanges": {
+      "name": "AstralCrystalBlockNeighbourBlockChanges"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

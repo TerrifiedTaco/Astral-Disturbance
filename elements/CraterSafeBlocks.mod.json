@@ -18,9 +18,6 @@
         "value": "Blocks.VOID_AIR"
       },
       {
-        "value": "Blocks.AMETHYST_BLOCK"
-      },
-      {
         "value": "Blocks.BEDROCK"
       },
       {
@@ -64,6 +61,21 @@
       },
       {
         "value": "CUSTOM:BiomeSpreadBlock"
+      },
+      {
+        "value": "CUSTOM:AstralStone"
+      },
+      {
+        "value": "CUSTOM:AstralOreNatural"
+      },
+      {
+        "value": "CUSTOM:AstralOre"
+      },
+      {
+        "value": "CUSTOM:AstralGrass"
+      },
+      {
+        "value": "CUSTOM:AstralCrystalBlock"
       }
     ],
     "functions": [],

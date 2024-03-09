@@ -31,13 +31,13 @@ public class CraterSpreadBlockUpdateTickProcedure {
 		double y_off = 0;
 		double z_off = 0;
 		double stage = 0;
+		ItemStack itemToUse = ItemStack.EMPTY;
 		if (world instanceof ServerLevel _level && _level.getServer() != null) {
 			Optional<CommandFunction> _fopt = _level.getServer().getFunctions().get(new ResourceLocation("astral_disturbance:spawn_meteorite_biome"));
 			if (_fopt.isPresent())
 				_level.getServer().getFunctions().execute(_fopt.get(), new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null));
 		}
 		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(new ResourceLocation("astral_disturbance:crater_ignite")))) {
-			world.setBlock(BlockPos.containing(x, y + 1, z), Blocks.AIR.defaultBlockState(), 3);
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 						"fill ~5 ~ ~5 ~-5 ~15 ~-5 minecraft:fire replace #astral_disturbance:crater_ignite");
@@ -91,7 +91,7 @@ public class CraterSpreadBlockUpdateTickProcedure {
 				}
 			}
 		} else {
-			if (Math.random() > (stage - 15) / 10 && !(world.getBlockState(BlockPos.containing(x_off, y_off, z_off))).is(BlockTags.create(new ResourceLocation("astral_disturbance:crater_safe_blocks")))) {
+			if (Math.random() > (stage - 15) / 10 && !(world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(new ResourceLocation("astral_disturbance:crater_safe_blocks")))) {
 				world.setBlock(BlockPos.containing(x, y + 1, z), AstralDisturbanceModBlocks.CRATER_SPREAD_BLOCK.get().defaultBlockState(), 3);
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y + 1, z);
@@ -131,7 +131,27 @@ public class CraterSpreadBlockUpdateTickProcedure {
 					}
 				}
 			}
-			return true;
+			for (Direction directioniterator : Direction.Plane.HORIZONTAL) {
+				x_off = directioniterator.getStepX() + x;
+				y_off = directioniterator.getStepY() + y;
+				z_off = directioniterator.getStepZ() + z;
+				if (!(world.getBlockState(BlockPos.containing(x_off, y_off, z_off))).is(BlockTags.create(new ResourceLocation("astral_disturbance:crater_safe_blocks")))) {
+					itemToUse = (new ItemStack((world.getBlockState(BlockPos.containing(x_off, y_off, z_off))).getBlock()));
+					world.setBlock(BlockPos.containing(x_off, y_off, z_off), AstralDisturbanceModBlocks.BIOME_SPREAD_BLOCK.get().defaultBlockState(), 3);
+					{
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x_off, y_off, z_off));
+						if (_ent != null) {
+							final int _slotid = 0;
+							final ItemStack _setstack = itemToUse;
+							_setstack.setCount(1);
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
+					}
+				}
+			}
 		}
 		for (Direction directioniterator : Direction.Plane.HORIZONTAL) {
 			x_off = directioniterator.getStepX() + x;

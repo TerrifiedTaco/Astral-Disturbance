@@ -1,14 +1,17 @@
 package net.essorant.astraldisturbance.procedures;
 
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.arguments.coordinates.BlockPosArgument;
 import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 import net.essorant.astraldisturbance.init.AstralDisturbanceModBlocks;
 
@@ -30,16 +33,7 @@ public class SpawnMeteorProcProcedure {
 				}
 			}
 		}.getX();
-		y_pos = new Object() {
-			public double getY() {
-				try {
-					return BlockPosArgument.getLoadedBlockPos(arguments, "location").getY();
-				} catch (CommandSyntaxException e) {
-					e.printStackTrace();
-					return 0;
-				}
-			}
-		}.getY();
+		y_pos = 0;
 		z_pos = new Object() {
 			public double getZ() {
 				try {
@@ -50,19 +44,11 @@ public class SpawnMeteorProcProcedure {
 				}
 			}
 		}.getZ();
-		while ((world.getBlockState(BlockPos.containing(x_pos, y_pos, z_pos))).getBlock() == Blocks.AIR) {
-			y_pos = 1 - y_pos;
-			if (y_pos < 0) {
-				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Could not find suitable spot for meteorite! (Too low)"), false);
-				break;
-			}
-		}
 		while (!world.canSeeSkyFromBelowWater(BlockPos.containing(x_pos, y_pos, z_pos))) {
 			y_pos = 1 + y_pos;
 			if (y_pos > 256) {
 				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Could not find suitable spot for meteorite! (Too high)"), false);
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Could not find suitable spot for meteorite!"), false);
 				break;
 			}
 		}
@@ -76,5 +62,9 @@ public class SpawnMeteorProcProcedure {
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
+		if (world instanceof ServerLevel _level)
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x_pos, y_pos, z_pos), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"/meteor_explosion ~ ~5 ~ 10 150 600 400");
+		DoScreenshakeProcedure.execute(390, 0.5f);
 	}
 }

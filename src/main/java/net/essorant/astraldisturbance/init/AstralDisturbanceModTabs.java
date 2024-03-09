@@ -31,6 +31,8 @@ public class AstralDisturbanceModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(AstralDisturbanceModBlocks.ASTRAL_STONE.get().asItem());
 			tabData.accept(AstralDisturbanceModBlocks.ASTRAL_ORE.get().asItem());
+			tabData.accept(AstralDisturbanceModBlocks.ASTRAL_GRASS.get().asItem());
+			tabData.accept(AstralDisturbanceModBlocks.ASTRAL_CRYSTAL_BLOCK.get().asItem());
 		}
 	}
 }
